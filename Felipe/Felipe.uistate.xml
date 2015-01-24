@@ -38,7 +38,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/personagemPrincipalFase/" />
         <folder expanded="1" path="animation-folder/MuseuIcone/" />
         <folder expanded="1" path="animation-folder/Carro/" />
-        <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/araucaria/" />
         <folder expanded="1" path="animation-folder/museuBackground/" />
         <folder expanded="1" path="animation-folder/osso/" />
