@@ -10,11 +10,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="1">Layout 1</layout>
+        <layout order="1">Layout 1</layout>
+        <layout active="1" order="3">Fase 1</layout>
         <event-sheet order="2">Event sheet 1</event-sheet>
+        <event-sheet order="4">Event sheet 2</event-sheet>
     </open-tabs>
     <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
         <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
     </properties>
     <families-expanded root="1" />
     <folders-expanded>
@@ -25,5 +30,21 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/fundo/" />
+        <folder expanded="1" path="animation-folder/personagemPrincipalMapa/" />
+        <folder expanded="1" path="animation-folder/borda/" />
+        <folder expanded="1" path="animation-folder/pedra/" />
+        <folder expanded="1" path="animation-folder/grama/" />
+        <folder expanded="1" path="animation-folder/personagemPrincipalFase/" />
+        <folder expanded="1" path="animation-folder/MuseuIcone/" />
+        <folder expanded="1" path="animation-folder/Carro/" />
+        <folder expanded="1" path="animation-folder/araucaria/" />
+        <folder expanded="1" path="animation-folder/museuBackground/" />
+        <folder expanded="1" path="animation-folder/osso/" />
+        <folder expanded="1" path="animation-folder/predioFundo/" />
+        <folder expanded="1" path="animation-folder/estatua/" />
+        <folder expanded="1" path="animation-folder/chao/" />
+        <folder expanded="1" path="animation-folder/plataformaFlutuante/" />
+        <folder expanded="1" path="animation-folder/linhaVertical/" />
     </folders-expanded>
 </c2uistate>

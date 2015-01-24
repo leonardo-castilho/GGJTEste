@@ -2,5 +2,64 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 1</name>
-    <events />
+    <events>
+        <event-block sid="1560804977858223">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="5287898217939629" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="2304314780618763" type="personagemPrincipalMapa">
+                    <param id="0" name="Animation">&quot;MoverBaixo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7821005597005847">
+            <conditions>
+                <condition id="2" name="Key is down" sid="6211197492137888" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3955674335844391" type="personagemPrincipalMapa">
+                    <param id="0" name="Animation">&quot;MoverCima&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7646112248775151">
+            <conditions>
+                <condition id="3" name="On key released" sid="7123650202026459" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="3402386040532505" type="personagemPrincipalMapa" />
+            </actions>
+        </event-block>
+        <event-block sid="7870669971119528">
+            <conditions>
+                <condition id="3" name="On key released" sid="5253082169011832" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="1949092027012849" type="personagemPrincipalMapa" />
+            </actions>
+        </event-block>
+        <event-block sid="7660641897290379">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8023347865204246" type="personagemPrincipalMapa">
+                    <param id="0" name="Object">MuseuIcone</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5000990771546476" type="System">
+                    <param id="0" name="Layout">Fase 1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>
