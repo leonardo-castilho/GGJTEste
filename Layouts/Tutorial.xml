@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Diario</name>
-    <sid>4579150630706515</sid>
-    <event-sheet>Event sheet Diario</event-sheet>
+    <name>Tutorial</name>
+    <sid>9457421702579942</sid>
+    <event-sheet>Event sheet Tutorial</event-sheet>
     <size>
-        <width>1708</width>
-        <height>960</height>
+        <width>1024</width>
+        <height>768</height>
     </size>
     <margins>
         <horizontal>500</horizontal>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="35863184104077">
+        <layer name="Layer 0" sid="1475681452527185">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
