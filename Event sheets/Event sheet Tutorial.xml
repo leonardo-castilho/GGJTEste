@@ -4,16 +4,64 @@
     <name>Event sheet Tutorial</name>
     <events>
         <event-block sid="7169322443146988">
+            <conditions />
+            <actions />
+        </event-block>
+        <variable constant="0" name="Estado_Pulo_Inic" sid="5537971140393507" static="0" type="number">0</variable>
+        <event-block sid="5291954299416622">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="530480863061241">
             <conditions>
-                <condition id="0" name="On key pressed" sid="345743457360189" type="Keyboard">
-                    <param id="0" name="Key">13 (Return)</param>
+                <condition id="2" name="Key is down" sid="8594801579157254" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="7403037407695681">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="254609104107078" type="PPrincipal">
+                            <param id="0" name="Object">Botao_Tuto</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="1447132723668016" type="System">
+                            <param id="0" name="Variable">Estado_Pulo_Inic</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="2200006736335425" type="System">
+                            <param id="0" name="Object to create">Banana</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">100</param>
+                            <param id="3" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="3562310301878103">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="4626124821827345" type="PPrincipal">
+                    <param id="0" name="Object">Banana</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-25" name="Go to layout (by name)" sid="9792962393167596" type="System">
-                    <param id="0" name="Layout">&quot;Tutorial&quot;</param>
+                <action behavior="Platform" id="4" name="Set jump strength" sid="7320485340222231" type="PPrincipal">
+                    <param id="0" name="Jump strength">800</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9874661855635531" type="Banana" />
+                <action id="-9" name="Set value" sid="4405713666237882" type="System">
+                    <param id="0" name="Variable">Estado_Pulo_Inic</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="8485322728436921">
+            <conditions />
+            <actions />
         </event-block>
     </events>
 </c2eventsheet>
