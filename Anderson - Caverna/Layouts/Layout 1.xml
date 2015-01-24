@@ -507,10 +507,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4497</x>
-                        <y>1393</y>
+                        <x>4674</x>
+                        <y>1393.145751953</y>
                         <z>0</z>
-                        <width>747</width>
+                        <width>641</width>
                         <height>11</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -849,10 +849,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>4391</x>
-                        <y>979</y>
+                        <x>4563.5</x>
+                        <y>997</y>
                         <z>0</z>
-                        <width>241</width>
+                        <width>438</width>
                         <height>15</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -891,8 +891,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3665</x>
-                        <y>1404</y>
+                        <x>3679</x>
+                        <y>1387</y>
                         <z>0</z>
                         <width>100</width>
                         <height>113</height>
@@ -935,10 +935,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3774</x>
+                        <x>3875</x>
                         <y>1650</y>
                         <z>0</z>
-                        <width>686</width>
+                        <width>888</width>
                         <height>466</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -977,8 +977,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>3928</x>
-                        <y>1395</y>
+                        <x>4067</x>
+                        <y>1388</y>
                         <z>0</z>
                         <width>100</width>
                         <height>117</height>
@@ -986,6 +986,35 @@
                         <hotspotX>0.483999997</hotspotX>
                         <hotspotY>0.515999973</hotspotY>
                         <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="chao" uid="31">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>4808</x>
+                        <y>1190</y>
+                        <z>0</z>
+                        <width>543</width>
+                        <height>11</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>-0.795666337</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
