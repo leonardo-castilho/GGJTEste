@@ -99,6 +99,7 @@
             </animation-folder>
         </object-type>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <object-type name="Sprite5" sid="4110373973800873">
             <plugin id="Sprite" />
             <animation-folder>
@@ -113,6 +114,8 @@
                 </animation>
             </animation-folder>
         </object-type>
+=======
+>>>>>>> parent of 110aa82... Up1 Felipe
     </object-folder>
     <families />
     <layout-folder>
