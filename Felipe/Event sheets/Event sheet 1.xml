@@ -61,5 +61,51 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="8433131975251235">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="7193243623493359" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="583535471113584" type="personagemPrincipalMapa">
+                    <param id="0" name="Animation">&quot;MoverDireita&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7907727284761959">
+            <conditions>
+                <condition id="3" name="On key released" sid="2301251953801656" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="3769427579549751" type="personagemPrincipalMapa" />
+            </actions>
+        </event-block>
+        <event-block sid="7232039228131691">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="4708797154434357" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="670200287630938" type="personagemPrincipalMapa">
+                    <param id="0" name="Animation">&quot;MoverEsquerda&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2628995675791719">
+            <conditions>
+                <condition id="3" name="On key released" sid="4344853038276639" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="4556388084162423" type="personagemPrincipalMapa" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

@@ -3,34 +3,6 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet 2</name>
     <events>
-        <event-block sid="6989039191684227">
-            <conditions>
-                <condition id="-7" name="Compare time" sid="1226501731779238" type="System">
-                    <param id="0" name="Comparison">0</param>
-                    <param id="1" name="Time (seconds)">0.1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Create object" sid="5089969272451071" type="System">
-                    <param id="0" name="Object to create">plataformaFlutuante</param>
-                    <param id="1" name="Layer">&quot;Layer 0&quot;</param>
-                    <param id="2" name="X">1200</param>
-                    <param id="3" name="Y">4680</param>
-                </action>
-                <action id="-3" name="Create object" sid="3982488850534888" type="System">
-                    <param id="0" name="Object to create">plataformaFlutuante</param>
-                    <param id="1" name="Layer">&quot;Layer 0&quot;</param>
-                    <param id="2" name="X">2560</param>
-                    <param id="3" name="Y">4185</param>
-                </action>
-                <action id="-3" name="Create object" sid="8546161229646769" type="System">
-                    <param id="0" name="Object to create">plataformaFlutuante</param>
-                    <param id="1" name="Layer">&quot;Layer 0&quot;</param>
-                    <param id="2" name="X">2215</param>
-                    <param id="3" name="Y">3885</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="9916276638934696">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="4144971957751671" type="personagemPrincipalFase">
@@ -41,48 +13,50 @@
                 <action id="-9" name="Destroy" sid="3080617802956646" type="osso" />
             </actions>
         </event-block>
-        <event-block sid="7247599927752448">
+        <event-block sid="4652757521786443">
             <conditions>
-                <condition id="-7" name="Compare time" sid="722766083240742" type="System">
-                    <param id="0" name="Comparison">0</param>
-                    <param id="1" name="Time (seconds)">0.6</param>
+                <condition id="0" name="On key pressed" sid="3646112424315782" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-3" name="Create object" sid="5352907440568889" type="System">
-                    <param id="0" name="Object to create">plataformaFlutuante</param>
-                    <param id="1" name="Layer">&quot;Layer 0&quot;</param>
-                    <param id="2" name="X">2250</param>
-                    <param id="3" name="Y">4365</param>
-                </action>
-                <action id="-3" name="Create object" sid="3448184722939311" type="System">
-                    <param id="0" name="Object to create">plataformaFlutuante</param>
-                    <param id="1" name="Layer">&quot;Layer 0&quot;</param>
-                    <param id="2" name="X">2855</param>
-                    <param id="3" name="Y">3555</param>
+                <action id="4" name="Set animation" sid="9695486741006324" type="personagemPrincipalFase">
+                    <param id="0" name="Animation">&quot;MoverDireita&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="4507943742039897">
+        <event-block sid="5555242374138316">
             <conditions>
-                <condition id="-7" name="Compare time" sid="8524142532625422" type="System">
-                    <param id="0" name="Comparison">0</param>
-                    <param id="1" name="Time (seconds)">0.6</param>
+                <condition id="3" name="On key released" sid="7622903769451732" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-3" name="Create object" sid="1532604765509143" type="System">
-                    <param id="0" name="Object to create">plataformaFlutuante</param>
-                    <param id="1" name="Layer">&quot;Layer 0&quot;</param>
-                    <param id="2" name="X">2570</param>
-                    <param id="3" name="Y">3780</param>
+                <action id="2" name="Stop" sid="4068255235885522" type="personagemPrincipalFase" />
+            </actions>
+        </event-block>
+        <event-block sid="445255865165058">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="2957821928019799" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8441611996148706" type="personagemPrincipalFase">
+                    <param id="0" name="Animation">&quot;MoverEsquerda&quot;</param>
+                    <param id="1" name="From">1</param>
                 </action>
-                <action id="-3" name="Create object" sid="4918297718619558" type="System">
-                    <param id="0" name="Object to create">plataformaFlutuante</param>
-                    <param id="1" name="Layer">&quot;Layer 0&quot;</param>
-                    <param id="2" name="X">2880</param>
-                    <param id="3" name="Y">3960</param>
-                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2044868250501854">
+            <conditions>
+                <condition id="3" name="On key released" sid="8809181809263838" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="5215569503198956" type="personagemPrincipalFase" />
             </actions>
         </event-block>
     </events>

@@ -67,118 +67,31 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Parado" pingpong="0" repeatcount="1" repeatto="0" sid="4123916198498225" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\frente\frente_01.png">
-                        <collision-poly>
-                            <point x="0.23" y="0.23" />
-                            <point x="0.5" y="0.01" />
-                            <point x="0.78" y="0.22" />
-                            <point x="0.89" y="0.5" />
-                            <point x="0.95" y="0.95" />
-                            <point x="0.5" y="0.85" />
-                            <point x="0.05" y="0.95" />
-                            <point x="0.15" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\frente\frente_01.png" />
                 </animation>
                 <animation framecount="4" loop="1" name="MoverBaixo" pingpong="0" repeatcount="1" repeatto="0" sid="4041040430612562" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\frente\frente_01.png">
-                        <collision-poly>
-                            <point x="0.23" y="0.23" />
-                            <point x="0.5" y="0.01" />
-                            <point x="0.78" y="0.22" />
-                            <point x="0.89" y="0.5" />
-                            <point x="0.95" y="0.95" />
-                            <point x="0.5" y="0.85" />
-                            <point x="0.05" y="0.95" />
-                            <point x="0.15" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\frente\frente_02.png">
-                        <collision-poly>
-                            <point x="0.23" y="0.23" />
-                            <point x="0.5" y="0.02" />
-                            <point x="0.78" y="0.22" />
-                            <point x="0.87" y="0.5" />
-                            <point x="0.95" y="0.95" />
-                            <point x="0.5" y="0.86" />
-                            <point x="0.05" y="0.95" />
-                            <point x="0.15" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\frente\frente_03.png">
-                        <collision-poly>
-                            <point x="0.23" y="0.23" />
-                            <point x="0.5" y="0.03" />
-                            <point x="0.78" y="0.22" />
-                            <point x="0.86" y="0.5" />
-                            <point x="0.95" y="0.95" />
-                            <point x="0.5" y="0.87" />
-                            <point x="0.05" y="0.95" />
-                            <point x="0.15" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\frente\frente_04.png">
-                        <collision-poly>
-                            <point x="0.23" y="0.23" />
-                            <point x="0.5" y="0.02" />
-                            <point x="0.78" y="0.22" />
-                            <point x="0.87" y="0.5" />
-                            <point x="0.95" y="0.95" />
-                            <point x="0.5" y="0.86" />
-                            <point x="0.05" y="0.95" />
-                            <point x="0.15" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\frente\frente_01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\frente\frente_02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\frente\frente_03.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\frente\frente_04.png" />
                 </animation>
                 <animation framecount="4" loop="1" name="MoverCima" pingpong="0" repeatcount="1" repeatto="0" sid="4407344261660898" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\costas\costas_01.png">
-                        <collision-poly>
-                            <point x="0.23" y="0.23" />
-                            <point x="0.5" y="0.01" />
-                            <point x="0.78" y="0.22" />
-                            <point x="0.91" y="0.5" />
-                            <point x="0.95" y="0.95" />
-                            <point x="0.5" y="0.85" />
-                            <point x="0.06" y="0.94" />
-                            <point x="0.1" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\costas\costas_02.png">
-                        <collision-poly>
-                            <point x="0.23" y="0.23" />
-                            <point x="0.5" y="0.02" />
-                            <point x="0.78" y="0.22" />
-                            <point x="0.91" y="0.5" />
-                            <point x="0.95" y="0.95" />
-                            <point x="0.5" y="0.86" />
-                            <point x="0.06" y="0.94" />
-                            <point x="0.1" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\costas\costas_03.png">
-                        <collision-poly>
-                            <point x="0.23" y="0.23" />
-                            <point x="0.5" y="0.03" />
-                            <point x="0.78" y="0.22" />
-                            <point x="0.91" y="0.5" />
-                            <point x="0.95" y="0.95" />
-                            <point x="0.5" y="0.87" />
-                            <point x="0.06" y="0.94" />
-                            <point x="0.1" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\costas\costas_04.png">
-                        <collision-poly>
-                            <point x="0.23" y="0.23" />
-                            <point x="0.5" y="0.02" />
-                            <point x="0.78" y="0.22" />
-                            <point x="0.91" y="0.5" />
-                            <point x="0.95" y="0.95" />
-                            <point x="0.5" y="0.86" />
-                            <point x="0.06" y="0.94" />
-                            <point x="0.1" y="0.5" />
-                        </collision-poly>
-                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\costas\costas_01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\costas\costas_02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\costas\costas_03.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\costas\costas_04.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="MoverDireita" pingpong="0" repeatcount="1" repeatto="0" sid="6881395171837607" speed="5">
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png" />
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_02.png" />
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_03.png" />
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_04.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="MoverEsquerda" pingpong="0" repeatcount="1" repeatto="0" sid="8622040728155881" speed="5">
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png" />
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_02.png" />
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_03.png" />
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_04.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -230,8 +143,20 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8578071782738629" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\frente\frente_01.png" />
+                <animation framecount="1" loop="0" name="Parado" pingpong="0" repeatcount="1" repeatto="0" sid="6765730231979669" speed="5">
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="MoverDireita" pingpong="0" repeatcount="1" repeatto="0" sid="8578071782738629" speed="5">
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png" />
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_02.png" />
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_03.png" />
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_04.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="MoverEsquerda" pingpong="0" repeatcount="1" repeatto="0" sid="4441174283780607" speed="5">
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png" />
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_02.png" />
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_03.png" />
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_04.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -349,6 +274,41 @@
                             <point x="0.00800003" y="0.946" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="linhaVertical2" sid="2810183957708902">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="4409812242032474">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="597225736390747" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.992" y="0.946" />
+                            <point x="0.96" y="0.968" />
+                            <point x="0.532001" y="0.551999" />
+                            <point x="0.052" y="0.0959996" />
+                            <point x="0.072" y="0.056" />
+                            <point x="0.552" y="0.52" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="plataformaEstatica" sid="2868542955328203">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2816886153929586">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="23459429463686" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>
