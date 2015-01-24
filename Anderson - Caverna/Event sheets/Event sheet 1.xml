@@ -185,5 +185,39 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="4965695666377825" title="PlataformaQueCai" />
+        <event-block sid="6360136594233985">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6324520817948168" type="personagemPrincipalFase">
+                    <param id="0" name="Object">PlataformaQueCai</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="1191875514402969" type="System">
+                    <param id="0" name="Seconds">0.2</param>
+                </action>
+                <action behavior="Physics" id="27" name="Set enabled" sid="2810590850636853" type="PlataformaQueCai">
+                    <param id="0" name="Mode">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6641913575438983">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="806302265733509" type="Sprite2">
+                    <param id="0" name="Object">personagemPrincipalFase</param>
+                </condition>
+                <condition id="-11" name="Is within angle" sid="4229643904238641" type="Sprite2">
+                    <param id="0" name="Within">0.5</param>
+                    <param id="1" name="Angle">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-21" name="Rotate toward position" sid="9883578871759815" type="Sprite2">
+                    <param id="0" name="Degrees">-20</param>
+                    <param id="1" name="X">0</param>
+                    <param id="2" name="Y">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
