@@ -219,19 +219,82 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Parado" pingpong="0" repeatcount="1" repeatto="0" sid="6792101227093721" speed="5">
-                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png" />
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="4" loop="1" name="MoverDireita" pingpong="0" repeatcount="1" repeatto="0" sid="9575572879677758" speed="5">
-                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png" />
-                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_02.png" />
-                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_03.png" />
-                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_04.png" />
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_02.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_03.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_04.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="4" loop="1" name="MoverEsquerda" pingpong="0" repeatcount="1" repeatto="0" sid="3306032137524535" speed="5">
-                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png" />
-                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_02.png" />
-                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_03.png" />
-                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_04.png" />
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_02.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_03.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_04.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -551,7 +614,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2955070429275756" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Desktop\Imagens GGJ\CHAO01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Desktop\Imagens GGJ\TERRA01.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -559,7 +622,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5485609323861808" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Desktop\Imagens GGJ\CHAO02.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Desktop\Imagens GGJ\TERRA02.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -567,7 +630,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3889215577799819" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Desktop\Imagens GGJ\CHAO03.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Desktop\Imagens GGJ\TERRA03.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -611,6 +674,76 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="chaoInclinado" sid="4165418953901241">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="2635631121457807">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1785191826101267" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tilesetMapa4" sid="5029072677298845">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3145584430853821" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Desktop\Imagens GGJ\TERRA04.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tilesetMapa5" sid="3314572152730842">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5733622895455103" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Desktop\Imagens GGJ\TERRA05.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tilesetMapa6" sid="6056163254790537">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9972324749285648" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Desktop\Imagens GGJ\TERRA06.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chaoInclinadoInvertido" sid="5083448978085531">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9561857376753021">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6934256845395741" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="iconeMuseu" sid="6215165468284102">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4621416750674984" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -619,6 +752,7 @@
         <layout>Mapa.xml</layout>
         <layout>Fase Caverna.xml</layout>
         <layout>Tutorial.xml</layout>
+        <layout>Fase Museu.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet Menu.xml</event-sheet>
@@ -626,6 +760,7 @@
         <event-sheet>Event sheet Mapa.xml</event-sheet>
         <event-sheet>Event sheet Fase Caverna.xml</event-sheet>
         <event-sheet>Event sheet Tutorial.xml</event-sheet>
+        <event-sheet>Event sheet Museu.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="6" />

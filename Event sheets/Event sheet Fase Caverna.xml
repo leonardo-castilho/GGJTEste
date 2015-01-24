@@ -105,8 +105,10 @@
             <sub-events>
                 <event-block sid="3921612271497061">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="7748222735314349" type="personagemPrincipalFase">
+                        <condition id="9" name="Is overlapping at offset" sid="7748222735314349" type="personagemPrincipalFase">
                             <param id="0" name="Object">chao</param>
+                            <param id="1" name="Offset X">1</param>
+                            <param id="2" name="Offset Y">1</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -233,5 +235,53 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="6405682502715722">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5200128211217917" type="personagemPrincipalFase">
+                    <param id="0" name="Object">chaoInclinadoInvertido</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="7058480974648862" type="personagemPrincipalFase">
+                    <param id="0" name="Angle">45</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5918197764935985">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="476316605686395" type="personagemPrincipalFase">
+                    <param id="0" name="Object">chaoInclinado</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="305185495612152" type="personagemPrincipalFase">
+                    <param id="0" name="Angle">315</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5700865003712096">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5616555802593267" type="personagemPrincipalFase">
+                    <param id="0" name="Object">chaoInclinadoInvertido</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="1956989069240563" type="personagemPrincipalFase">
+                    <param id="0" name="Angle">45</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8873707787635769">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2521107545301383" type="personagemPrincipalFase">
+                    <param id="0" name="Object">chaoInclinado</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-8" name="Set angle" sid="1674796788725585" type="personagemPrincipalFase">
+                    <param id="0" name="Angle">315</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
