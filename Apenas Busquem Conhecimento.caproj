@@ -16,12 +16,17 @@
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Rotate" version="1">Rotate</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
         <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
         <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Viktor Korsun" id="water">Water</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -118,7 +123,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Botao_Tuto" sid="4694416696928753">
+        <object-type name="Botao_Tuto_old" sid="4694416696928753">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Physics" sid="3668990851775196">
@@ -127,7 +132,18 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="666266635562274" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.5" original-source="C:\Users\Casteia\Desktop\Imagens GGJ\botao_inativo.png">
+                        <collision-poly>
+                            <point x="0.0188679" y="0.0142857" />
+                            <point x="0.490566" y="0" />
+                            <point x="0.981132" y="0.0142857" />
+                            <point x="1" y="0.5" />
+                            <point x="0.981132" y="0.985714" />
+                            <point x="0.490566" y="1" />
+                            <point x="0.0188679" y="0.985714" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -144,7 +160,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="chao" sid="2410470304831921">
+        <object-type name="chaoTutorial" sid="2410470304831921">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="8342038129339624">
@@ -232,6 +248,302 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4766226081527878" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="itemMola" sid="5276250208928006">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="3674002683277596">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2860463292202439" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Desktop\Imagens GGJ\ITEM_PULO.png">
+                        <collision-poly>
+                            <point x="0.195652" y="0.15" />
+                            <point x="0.5" y="0" />
+                            <point x="0.826087" y="0.133333" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="0.75" />
+                            <point x="0.51087" y="0.766667" />
+                            <point x="0" y="0.766667" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tutorialBackground" sid="5640487849746017">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3337522786663601" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Desktop\Imagens GGJ\TELA01TUTORIAL.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Botao_Tuto" sid="3736800389484534">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="4579725303067896">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1395222548908368" speed="5">
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.5" original-source="D:\Windows\Leonardo\Área de Trabalho\tela tutorial\botao_inativo.png">
+                        <collision-poly>
+                            <point x="0.0188679" y="0.0142857" />
+                            <point x="0.490566" y="0" />
+                            <point x="0.981132" y="0.0142857" />
+                            <point x="1" y="0.5" />
+                            <point x="0.981132" y="0.985714" />
+                            <point x="0.490566" y="1" />
+                            <point x="0.0188679" y="0.985714" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="ligado" pingpong="0" repeatcount="1" repeatto="0" sid="9373082828488109" speed="5">
+                    <frame duration="1" hotspotX="0.509434" hotspotY="0.5" original-source="D:\Windows\Leonardo\Área de Trabalho\tela tutorial\botao_ativo.png">
+                        <collision-poly>
+                            <point x="0.0188679" y="0.0142857" />
+                            <point x="0.490566" y="0" />
+                            <point x="0.981132" y="0.0142857" />
+                            <point x="1" y="0.5" />
+                            <point x="0.981132" y="0.985714" />
+                            <point x="0.490566" y="1" />
+                            <point x="0.0188679" y="0.985714" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="caixaDialogo" sid="2126522188981552">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2858113797856602" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Desktop\Imagens GGJ\quadro_dialogo_bilu.png">
+                        <collision-poly>
+                            <point x="0.635742" y="0.847656" />
+                            <point x="0.364258" y="0.847656" />
+                            <point x="0.933594" y="0.911458" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0966797" y="0.871094" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chao" sid="928937461141833">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="3719368966888924">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4208440006173684" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Agua" sid="953068998436819">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="5708446622785927">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <effects>
+                <effect-type name="Water">
+                    <effect id="water" />
+                </effect-type>
+            </effects>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7051411645628447" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SanfonaDoBiArticulado" sid="3920408042942101">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4802995162312383" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Gota" sid="831029065451583">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Physics" sid="1079976667707827">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6081246708617573" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano" sid="6686901606086768">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="4598542692969374">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="300280859259926">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="3304143305951279">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7458769837227988" speed="5">
+                    <frame duration="1" hotspotX="0.988" hotspotY="0.484" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlataformaQueCai" sid="4274251627621725">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="5021227238820253">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="1090787315225206">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1020112148285117" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="chao2" sid="7913499574098686">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="8642896281006633">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5322504678973015" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="7005829052313512">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Rotate" sid="7959944411771692">
+                    <behavior id="Rotate" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7524979472449452" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.192" y="0.192" />
+                            <point x="0.5" y="0.064" />
+                            <point x="0.856" y="0.144" />
+                            <point x="0.972" y="0.5" />
+                            <point x="0.788" y="0.788" />
+                            <point x="0.5" y="0.872" />
+                            <point x="0.232" y="0.768" />
+                            <point x="0.084" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano2" sid="2937146313707437">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7148616563604226">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1010828222616517" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="9159704065621987">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9210180564260809">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="3671094079559039">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4510190707318153" speed="5">
+                    <frame duration="1" hotspotX="0.484" hotspotY="0.516">
+                        <collision-poly>
+                            <point x="0.188" y="0.308" />
+                            <point x="0.444" y="0.24" />
+                            <point x="0.776" y="0.368" />
+                            <point x="0.996" y="0.652" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.528" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="4854715134141275">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7011900920726801">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5793524277696082" speed="5">
+                    <frame duration="1" hotspotX="0.476" hotspotY="0.988">
+                        <collision-poly>
+                            <point x="0.192" y="0.192" />
+                            <point x="0.44" y="0.072" />
+                            <point x="0.764" y="0.34" />
+                            <point x="0.796" y="0.568" />
+                            <point x="0.596" y="0.976001" />
+                            <point x="0.376" y="1" />
+                            <point x="0.18" y="0.604" />
+                            <point x="0.232" y="0.436" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="5528538265346531">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="1523956802013275">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5920559037630327" speed="5">
+                    <frame duration="1" hotspotX="0.484" hotspotY="0.516">
+                        <collision-poly>
+                            <point x="0.188" y="0.308" />
+                            <point x="0.444" y="0.24" />
+                            <point x="0.776" y="0.368" />
+                            <point x="0.996" y="0.652" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.528" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
