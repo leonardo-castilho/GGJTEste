@@ -11,12 +11,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="1">Menu</layout>
-        <layout order="3">Mapa</layout>
-        <layout active="1" order="6">Fase 1</layout>
-        <event-sheet order="2">Event sheet Menu</event-sheet>
-        <event-sheet order="4">Event sheet Tutorial</event-sheet>
-        <event-sheet order="5">Event sheet Mapa</event-sheet>
-        <event-sheet order="7">Event sheet Fase 1</event-sheet>
+        <layout order="2">Mapa</layout>
+        <event-sheet active="1" order="3">Event sheet Mapa</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -33,7 +29,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/personagemPrincipalMapa/" />
+        <folder expanded="1" path="animation-folder/personagemPrincipalMapa_old/" />
         <folder expanded="1" path="animation-folder/borda/" />
         <folder expanded="1" path="animation-folder/iconeNave/" />
         <folder expanded="1" path="animation-folder/PPrincipal/" />
@@ -62,5 +58,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Sprite/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/tilesetMapa1/" />
+        <folder expanded="1" path="animation-folder/tilesetMapa2/" />
+        <folder expanded="1" path="animation-folder/tilesetMapa3/" />
+        <folder expanded="1" path="animation-folder/personagemPrincipalMapa/" />
     </folders-expanded>
 </c2uistate>

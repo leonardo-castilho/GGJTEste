@@ -5,15 +5,111 @@
     <events>
         <event-block sid="4971917163127795">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="6885287335972578" type="personagemPrincipalMapa">
+                <condition id="0" name="On collision with another object" sid="6885287335972578" type="personagemPrincipalMapa_old">
                     <param id="0" name="Object">entradaCaverna</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="6733844999909879" type="System">
-                    <param id="0" name="Layout">Fase 1</param>
+                    <param id="0" name="Layout">Fase Caverna</param>
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="5647641245714977" title="Movimento Sprite">
+            <sub-events>
+                <event-block sid="8780057888338546">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="5208605840514825" type="Keyboard">
+                            <param id="0" name="Key">40 (Down arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="6748054174834694" type="personagemPrincipalMapa">
+                            <param id="0" name="Animation">&quot;MoverBaixo&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8295881088699302">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="7645312089441966" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5134231383217188" type="personagemPrincipalMapa">
+                            <param id="0" name="Animation">&quot;MoverCima&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5729319429817602">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="7047305349008118" type="Keyboard">
+                            <param id="0" name="Key">40 (Down arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="2841039715063349" type="personagemPrincipalMapa" />
+                    </actions>
+                </event-block>
+                <event-block sid="6624352194583396">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="2516677732440722" type="Keyboard">
+                            <param id="0" name="Key">38 (Up arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="3379281510621091" type="personagemPrincipalMapa" />
+                    </actions>
+                </event-block>
+                <event-block sid="2860783672050968">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="6608725726390308" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="7773938752601891" type="personagemPrincipalMapa">
+                            <param id="0" name="Animation">&quot;MoverDireita&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7515548921654734">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="7770668394814734" type="Keyboard">
+                            <param id="0" name="Key">39 (Right arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="396038127486461" type="personagemPrincipalMapa" />
+                    </actions>
+                </event-block>
+                <event-block sid="4852816561333363">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="8930544240222032" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="5162331401674515" type="personagemPrincipalMapa">
+                            <param id="0" name="Animation">&quot;MoverEsquerda&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6845453905614526">
+                    <conditions>
+                        <condition id="3" name="On key released" sid="3016840569689026" type="Keyboard">
+                            <param id="0" name="Key">37 (Left arrow)</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Stop" sid="3416342268070441" type="personagemPrincipalMapa" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
