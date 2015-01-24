@@ -2,5 +2,18 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet Mapa</name>
-    <events />
+    <events>
+        <event-block sid="4971917163127795">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6885287335972578" type="personagemPrincipalMapa">
+                    <param id="0" name="Object">entradaCaverna</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6733844999909879" type="System">
+                    <param id="0" name="Layout">Fase 1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

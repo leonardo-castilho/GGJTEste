@@ -22,7 +22,7 @@
             <sub-events>
                 <event-block sid="7403037407695681">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="254609104107078" type="PPrincipal">
+                        <condition id="0" name="On collision with another object" sid="254609104107078" type="personagemPrincipalFase">
                             <param id="0" name="Object">Botao_Tuto</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="1447132723668016" type="System">
@@ -44,12 +44,12 @@
         </event-block>
         <event-block sid="3562310301878103">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="4626124821827345" type="PPrincipal">
+                <condition id="0" name="On collision with another object" sid="4626124821827345" type="personagemPrincipalFase">
                     <param id="0" name="Object">Banana</param>
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Platform" id="4" name="Set jump strength" sid="7320485340222231" type="PPrincipal">
+                <action behavior="Platform" id="4" name="Set jump strength" sid="7320485340222231" type="personagemPrincipalFase">
                     <param id="0" name="Jump strength">800</param>
                 </action>
                 <action id="-9" name="Destroy" sid="9874661855635531" type="Banana" />
@@ -62,6 +62,64 @@
         <event-block sid="8485322728436921">
             <conditions />
             <actions />
+        </event-block>
+        <event-block sid="3769475045329551">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="2939958878644746" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="3650440889677211" type="personagemPrincipalFase">
+                    <param id="0" name="Animation">&quot;MoverDireita&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2261837610893756">
+            <conditions>
+                <condition id="3" name="On key released" sid="7111937555572293" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="7447342388915584" type="personagemPrincipalFase" />
+            </actions>
+        </event-block>
+        <event-block sid="3770419413703512">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8522135220521474" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8500746078609898" type="personagemPrincipalFase">
+                    <param id="0" name="Animation">&quot;MoverEsquerda&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6938855959160761">
+            <conditions>
+                <condition id="3" name="On key released" sid="8143276133097246" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="1286758257498426" type="personagemPrincipalFase" />
+            </actions>
+        </event-block>
+        <event-block sid="8304351719351184">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3196588825217228" type="personagemPrincipalFase">
+                    <param id="0" name="Object">saidaMapa</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5052010243109613" type="System">
+                    <param id="0" name="Layout">Mapa</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

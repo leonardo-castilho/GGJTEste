@@ -67,7 +67,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Padon" uid="9">
+                <instance type="plataforma" uid="9">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -96,7 +96,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="10">
+                <instance type="chao" uid="10">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -125,7 +125,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite3" uid="11">
+                <instance type="computador" uid="11">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -147,7 +147,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite6" uid="12">
+                <instance type="bordas" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -176,7 +176,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite6" uid="13">
+                <instance type="bordas" uid="13">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -243,7 +243,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Padon" uid="15">
+                <instance type="plataforma" uid="15">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -272,7 +272,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Padon" uid="16">
+                <instance type="plataforma" uid="16">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -301,7 +301,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Padon" uid="17">
+                <instance type="plataforma" uid="17">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -330,6 +330,28 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="saidaMapa" uid="7">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>1044.5</x>
+                        <y>117</y>
+                        <z>0</z>
+                        <width>88</width>
+                        <height>158</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -349,7 +371,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="PPrincipal" uid="7">
+                <instance type="personagemPrincipalFase" uid="18">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -364,10 +386,15 @@
                                 <deceleration>1500</deceleration>
                                 <jump-strength>0</jump-strength>
                                 <gravity>1500</gravity>
-                                <max-fall-speed>500</max-fall-speed>
+                                <max-fall-speed>1000</max-fall-speed>
                                 <double-jump>Disabled</double-jump>
                                 <jump-sustain>0</jump-sustain>
                                 <default-controls>Yes</default-controls>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="ScrollTo">
+                            <properties>
                                 <initial-state>Enabled</initial-state>
                             </properties>
                         </behavior-instance>
@@ -375,13 +402,13 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>77</x>
-                        <y>616</y>
+                        <x>94</x>
+                        <y>617</y>
                         <z>0</z>
-                        <width>100</width>
+                        <width>103</width>
                         <height>100</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.504854023</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>

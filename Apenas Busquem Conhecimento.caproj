@@ -79,6 +79,11 @@
         </object-type>
         <object-type name="iconeNave" sid="909567916765329">
             <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="9002783821396277">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="734882749765749" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
@@ -96,8 +101,20 @@
                 </behavior-type>
             </behaviors>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6923791113476419" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                <animation framecount="1" loop="1" name="Parado" pingpong="0" repeatcount="1" repeatto="0" sid="6923791113476419" speed="5">
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="MoverDireita" pingpong="0" repeatcount="1" repeatto="0" sid="800751018681566" speed="5">
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png" />
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_02.png" />
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_03.png" />
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_04.png" />
+                </animation>
+                <animation framecount="4" loop="0" name="MoverEsquerda" pingpong="0" repeatcount="1" repeatto="0" sid="2415329186356664" speed="5">
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png" />
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_02.png" />
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_03.png" />
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_04.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -114,7 +131,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Padon" sid="1328828557891222">
+        <object-type name="plataforma" sid="1328828557891222">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Jumpthru" sid="741718994162007">
@@ -127,7 +144,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite2" sid="2410470304831921">
+        <object-type name="chao" sid="2410470304831921">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="8342038129339624">
@@ -140,7 +157,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="608956930858469">
+        <object-type name="computador" sid="608956930858469">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7519305477859365" speed="5">
@@ -148,7 +165,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite6" sid="1456321372216324">
+        <object-type name="bordas" sid="1456321372216324">
             <plugin id="Sprite" />
             <behaviors>
                 <behavior-type name="Solid" sid="1049968069336072">
@@ -171,6 +188,50 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="764025234567675" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Windows\Leonardo\Downloads\Nova pasta\banana.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="personagemPrincipalFase" sid="965815507056289">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="4840978729867122">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="5359407471940269">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Parado" pingpong="0" repeatcount="1" repeatto="0" sid="6792101227093721" speed="5">
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="MoverDireita" pingpong="0" repeatcount="1" repeatto="0" sid="9575572879677758" speed="5">
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png" />
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_02.png" />
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_03.png" />
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_04.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="MoverEsquerda" pingpong="0" repeatcount="1" repeatto="0" sid="3306032137524535" speed="5">
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png" />
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_02.png" />
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_03.png" />
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_04.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="saidaMapa" sid="2029766333225586">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2468414498481209" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="entradaCaverna" sid="6413636508765026">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4766226081527878" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
         </object-type>

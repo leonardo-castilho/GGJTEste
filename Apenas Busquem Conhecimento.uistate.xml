@@ -10,11 +10,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Menu</layout>
-        <layout order="2">Mapa</layout>
-        <layout active="1" order="3">Tutorial</layout>
-        <event-sheet order="1">Event sheet Menu</event-sheet>
-        <event-sheet order="4">Event sheet Tutorial</event-sheet>
+        <layout order="1">Menu</layout>
+        <layout order="3">Mapa</layout>
+        <layout order="4">Tutorial</layout>
+        <layout order="7">Fase 1</layout>
+        <event-sheet active="1" order="2">Event sheet Menu</event-sheet>
+        <event-sheet order="5">Event sheet Tutorial</event-sheet>
+        <event-sheet order="6">Event sheet Mapa</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -36,10 +38,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/iconeNave/" />
         <folder expanded="1" path="animation-folder/PPrincipal/" />
         <folder expanded="1" path="animation-folder/Botao_Tuto/" />
-        <folder expanded="1" path="animation-folder/Padon/" />
-        <folder expanded="1" path="animation-folder/Sprite2/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
-        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/plataforma/" />
+        <folder expanded="1" path="animation-folder/chao/" />
+        <folder expanded="1" path="animation-folder/computador/" />
+        <folder expanded="1" path="animation-folder/bordas/" />
         <folder expanded="1" path="animation-folder/Banana/" />
+        <folder expanded="1" path="animation-folder/personagemPrincipalFase/" />
+        <folder expanded="1" path="animation-folder/saidaMapa/" />
+        <folder expanded="1" path="animation-folder/entradaCaverna/" />
     </folders-expanded>
 </c2uistate>
