@@ -1170,6 +1170,11 @@
         <file name="botão.ogg" />
         <file name="item.m4a" />
         <file name="item.ogg" />
+        <file name="nave.ogg" />
+        <file name="isométrico.m4a" />
+        <file name="isométrico.ogg" />
+        <file name="Caverna.m4a" />
+        <file name="Caverna.ogg" />
     </music-folder>
     <files-folder>
         <file-folder name="Icons">

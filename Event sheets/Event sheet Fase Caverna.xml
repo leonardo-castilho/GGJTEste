@@ -283,5 +283,101 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="783312598012309">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="4668173459229634" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Preload" sid="1107010407855495" type="Audio">
+                    <param id="0" name="Audio file">Caverna</param>
+                </action>
+                <action id="0" name="Play" sid="6373604508320903" type="Audio">
+                    <param id="0" name="Audio file">Caverna</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2353749795997898">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="4195186760711896" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+                <condition id="9" name="Is overlapping at offset" sid="6031622437765147" type="personagemPrincipalFase">
+                    <param id="0" name="Object">chao2</param>
+                    <param id="1" name="Offset X">2</param>
+                    <param id="2" name="Offset Y">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9939440534868392" type="Audio">
+                    <param id="0" name="Audio file">pulo</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="793132151633759">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="7782217059079202" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+                <condition id="9" name="Is overlapping at offset" sid="3818450393567152" type="personagemPrincipalFase">
+                    <param id="0" name="Object">chao</param>
+                    <param id="1" name="Offset X">2</param>
+                    <param id="2" name="Offset Y">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="3005599426644189" type="Audio">
+                    <param id="0" name="Audio file">pulo</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8997650261900459">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8440409268100126" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+                <condition id="9" name="Is overlapping at offset" sid="6793801428911079" type="personagemPrincipalFase">
+                    <param id="0" name="Object">chaoInclinado</param>
+                    <param id="1" name="Offset X">2</param>
+                    <param id="2" name="Offset Y">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9474056835439692" type="Audio">
+                    <param id="0" name="Audio file">pulo</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3893229284442634">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="3628375961766283" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+                <condition id="9" name="Is overlapping at offset" sid="8398274319237364" type="personagemPrincipalFase">
+                    <param id="0" name="Object">chaoInclinadoInvertido</param>
+                    <param id="1" name="Offset X">2</param>
+                    <param id="2" name="Offset Y">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="5215295136419434" type="Audio">
+                    <param id="0" name="Audio file">pulo</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

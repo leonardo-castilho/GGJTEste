@@ -15,6 +15,7 @@
                 <action id="-2" name="Go to layout" sid="6733844999909879" type="System">
                     <param id="0" name="Layout">Fase Caverna</param>
                 </action>
+                <action id="33" name="Stop all" sid="2342270645510368" type="Audio" />
             </actions>
         </event-block>
         <event-block sid="6201333558677071">
@@ -27,6 +28,7 @@
                 <action id="-2" name="Go to layout" sid="2817899978862983" type="System">
                     <param id="0" name="Layout">Fase Museu</param>
                 </action>
+                <action id="33" name="Stop all" sid="9437768562794951" type="Audio" />
             </actions>
         </event-block>
         <event-group description="" sid="5647641245714977" title="Movimento Sprite">
@@ -145,6 +147,15 @@
                         <action id="-9" name="Set value" sid="6309651352634735" type="System">
                             <param id="0" name="Variable">randTile</param>
                             <param id="1" name="Value">int(random(3))</param>
+                        </action>
+                        <action id="4" name="Preload" sid="4170794009143991" type="Audio">
+                            <param id="0" name="Audio file">isométrico</param>
+                        </action>
+                        <action id="0" name="Play" sid="8268074398488401" type="Audio">
+                            <param id="0" name="Audio file">isométrico</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-10</param>
+                            <param id="1" name="Tag (optional)">&quot;&quot;</param>
                         </action>
                     </actions>
                     <sub-events>

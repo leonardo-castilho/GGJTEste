@@ -143,6 +143,16 @@
                 <action behavior="Platform" id="1" name="Set max speed" sid="4513005670553252" type="personagemPrincipalFase">
                     <param id="0" name="Max Speed">0</param>
                 </action>
+                <action id="0" name="Play" sid="2133056917346012" type="Audio">
+                    <param id="0" name="Audio file">item</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-20</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="4750527691496213" type="System">
+                    <param id="0" name="Variable">Estado_Pulo_Inic</param>
+                    <param id="1" name="Value">1</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="9828139471138167">
@@ -243,6 +253,7 @@
                 </condition>
             </conditions>
             <actions>
+                <action id="33" name="Stop all" sid="1057981069560283" type="Audio" />
                 <action id="-2" name="Go to layout" sid="5052010243109613" type="System">
                     <param id="0" name="Layout">Mapa</param>
                 </action>
@@ -259,6 +270,18 @@
                 <action id="4" name="Preload" sid="8925980445916474" type="Audio">
                     <param id="0" name="Audio file">pulo</param>
                 </action>
+                <action id="4" name="Preload" sid="396512914996306" type="Audio">
+                    <param id="0" name="Audio file">nave</param>
+                </action>
+                <action id="0" name="Play" sid="4534674206600901" type="Audio">
+                    <param id="0" name="Audio file">nave</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">1</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="4" name="Preload" sid="8161193421987063" type="Audio">
+                    <param id="0" name="Audio file">item</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="7456978578033253">
@@ -271,7 +294,7 @@
                 <action id="0" name="Play" sid="9286545348872731" type="Audio">
                     <param id="0" name="Audio file">queda da caixa</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
+                    <param id="3" name="Volume">-20</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
@@ -286,12 +309,17 @@
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
+                <condition id="9" name="Is overlapping at offset" sid="9050437657186078" type="personagemPrincipalFase">
+                    <param id="0" name="Object">chaoTutorial</param>
+                    <param id="1" name="Offset X">2</param>
+                    <param id="2" name="Offset Y">2</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Play" sid="6738528113511238" type="Audio">
                     <param id="0" name="Audio file">pulo</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
+                    <param id="3" name="Volume">-20</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
