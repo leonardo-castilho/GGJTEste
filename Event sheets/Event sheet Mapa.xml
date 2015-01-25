@@ -265,5 +265,118 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="4058888113128659">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="801773784949593" type="System" />
+                <condition id="-10" name="For" sid="7490950635980041" type="System">
+                    <param id="0" name="Name">&quot;&quot;</param>
+                    <param id="1" name="Start index">1</param>
+                    <param id="2" name="End index">random(10)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="9625317297458506" type="System">
+                    <param id="0" name="Object to create">pedra1</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(0,LayoutWidth)</param>
+                    <param id="3" name="Y">random(0,LayoutHeight)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6523296484282162">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="8136586693845373" type="System" />
+                <condition id="-10" name="For" sid="207139316607024" type="System">
+                    <param id="0" name="Name">&quot;&quot;</param>
+                    <param id="1" name="Start index">1</param>
+                    <param id="2" name="End index">random(10)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="2567356200681938" type="System">
+                    <param id="0" name="Object to create">pedra2</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(0,LayoutWidth)</param>
+                    <param id="3" name="Y">random(0,LayoutHeight)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5869383352085715">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="7501149534510261" type="System" />
+                <condition id="-10" name="For" sid="779926459634533" type="System">
+                    <param id="0" name="Name">&quot;&quot;</param>
+                    <param id="1" name="Start index">1</param>
+                    <param id="2" name="End index">random(10)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="6980445881395139" type="System">
+                    <param id="0" name="Object to create">pedra3</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">random(0,LayoutWidth)</param>
+                    <param id="3" name="Y">random(0,LayoutHeight)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="6878513509757948" title="MiniMapa">
+            <sub-events>
+                <event-block sid="4821988743580361">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="1999605597156902" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="9747254488721203" type="Sprite9">
+                            <param id="0" name="X">personagemPrincipalMapa.X*100/3072 +  Sprite8.X - Sprite8.Width/2</param>
+                            <param id="1" name="Y">personagemPrincipalMapa.Y*80/2304 +  Sprite8.Y - Sprite8.Height/2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="4975493311447389" title="Pegar a ultima posicao">
+            <sub-events>
+                <event-block sid="8399883075195672">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="9725258411253939" type="personagemPrincipalMapa">
+                            <param id="0" name="Object">Family1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+                <event-block sid="4816143906387867">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="2662965799216157" type="System" />
+                        <condition id="-6" name="Every X seconds" sid="547958001664518" type="System">
+                            <param id="0" name="Interval (seconds)">0.3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="2400470739337754" type="Dados">
+                            <param id="0" name="Instance variable">jogadorMapaPosX</param>
+                            <param id="1" name="Value">personagemPrincipalMapa.X</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="7868400737510498" type="Dados">
+                            <param id="0" name="Instance variable">jogadorMapaPosY</param>
+                            <param id="1" name="Value">personagemPrincipalMapa.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7451938681392148">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="1690464346433755" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="6508463855743803" type="JogadasTexto">
+                            <param id="0" name="Text">&quot;Tentativas: &quot; &amp; Dados.Jogadas </param>
+                        </action>
+                        <action id="-3" name="Set position" sid="3600549928528323" type="personagemPrincipalMapa">
+                            <param id="0" name="X">Dados.jogadorMapaPosX</param>
+                            <param id="1" name="Y">Dados.jogadorMapaPosY</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>

@@ -10,12 +10,14 @@
     <unique-id>3t0v5koxl2m1o</unique-id>
     <saved-with-version>19500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
@@ -1212,8 +1214,87 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="bateriaLevel" sid="9157693957237279">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="8222154017381595">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="701520346183219" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.517241" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bateria" sid="929810364101445">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="1711323363655481">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4081522992033904" speed="5">
+                    <frame duration="1" hotspotX="0.516667" hotspotY="0.666667" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type global="1" name="Dados" sid="9971350435078679">
+            <plugin id="Arr" />
+            <instance-variables>
+                <instance-variable name="Jogadas" sid="801759028442439" type="number" />
+                <instance-variable name="jogadorMapaPosX" sid="7594655026136008" type="number" />
+                <instance-variable name="jogadorMapaPosY" sid="2196812983752904" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="Sprite8" sid="588969956503057">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="4918639325930011">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9861418423152871" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="5471113329043174">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="4929162447328326">
+                    <behavior id="Anchor" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="2990512554474351">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7973872268423789" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="JogadasTexto" sid="8668114430346318">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="7183426239985456">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
     </object-folder>
-    <families />
+    <families>
+        <family name="Family1" plugin-id="Sprite" sid="5555769409402763">
+            <members>
+                <member>entradaCaverna</member>
+                <member>iconeMuseu</member>
+                <member>iconeNave</member>
+            </members>
+        </family>
+    </families>
     <layout-folder>
         <layout>Menu.xml</layout>
         <layout>Diario.xml</layout>
