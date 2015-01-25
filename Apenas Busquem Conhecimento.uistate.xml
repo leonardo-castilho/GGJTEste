@@ -11,9 +11,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="1">Menu</layout>
-        <layout order="2">Tutorial</layout>
-        <layout active="1" order="4">Mapa</layout>
-        <event-sheet order="3">Event sheet Tutorial</event-sheet>
+        <event-sheet active="1" order="2">Event sheet Menu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -68,5 +66,21 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/iconeMuseu/" />
         <folder expanded="1" path="animation-folder/Botao_ACt_Tex/" />
         <folder expanded="1" path="animation-folder/Convers_Tuto/" />
+        <folder expanded="1" path="animation-folder/SprTit1/" />
+        <folder expanded="1" path="animation-folder/SprCreditsD/" />
+        <folder expanded="1" path="animation-folder/SprLoadD/" />
+        <folder expanded="1" path="animation-folder/SprNewD/" />
+        <folder expanded="1" path="animation-folder/SprBilu/" />
+        <folder expanded="1" path="animation-folder/SprTerra/" />
+        <folder expanded="1" path="animation-folder/SprBracos/" />
+        <folder expanded="1" path="animation-folder/SprLua/" />
+        <folder expanded="1" path="animation-folder/SprBack/" />
+        <folder expanded="1" path="animation-folder/SprNuvens/" />
+        <folder expanded="1" path="animation-folder/SprTit2/" />
+        <folder expanded="1" path="animation-folder/SprTit3/" />
+        <folder expanded="1" path="animation-folder/SprTit4/" />
+        <folder expanded="1" path="animation-folder/SprNewAC/" />
+        <folder expanded="1" path="animation-folder/SprLoadAC/" />
+        <folder expanded="1" path="animation-folder/SprCreditsAC/" />
     </folders-expanded>
 </c2uistate>

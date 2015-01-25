@@ -10,6 +10,7 @@
     <unique-id>3t0v5koxl2m1o</unique-id>
     <saved-with-version>19500</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
@@ -17,6 +18,7 @@
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
         <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
@@ -805,6 +807,246 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="SprTit1" sid="7947627248321639">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="9746859502932919">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="15" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5999973826433837" speed="15">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Documents\GitHub\timepaella\png sequence 15fps\title_00001.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Documents\GitHub\timepaella\png sequence 15fps\title_00002.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Documents\GitHub\timepaella\png sequence 15fps\title_00003.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Documents\GitHub\timepaella\png sequence 15fps\title_00004.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Documents\GitHub\timepaella\png sequence 15fps\title_00005.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Documents\GitHub\timepaella\png sequence 15fps\title_00006.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Documents\GitHub\timepaella\png sequence 15fps\title_00007.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Documents\GitHub\timepaella\png sequence 15fps\pt2\title_00008.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Documents\GitHub\timepaella\png sequence 15fps\pt2\title_00009.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Documents\GitHub\timepaella\png sequence 15fps\pt2\title_00010.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Documents\GitHub\timepaella\png sequence 15fps\pt2\title_00011.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Documents\GitHub\timepaella\png sequence 15fps\pt2\title_00012.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Documents\GitHub\timepaella\png sequence 15fps\pt2\title_00013.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Documents\GitHub\timepaella\png sequence 15fps\pt2\title_00014.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Documents\GitHub\timepaella\png sequence 15fps\pt2\title_00015.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SprCreditsD" sid="4879419332842694">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="627417913695154" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Downloads\ggj2015menuintro\bt_credits_desativado.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SprLoadD" sid="9170832988560126">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3319233543195964" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Downloads\ggj2015menuintro\bt_loadgame_desativado.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SprNewD" sid="9469594094496387">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1759604347817906" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Downloads\ggj2015menuintro\bt_newgame_desativado.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SprBilu" sid="8768197643080101">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8384592895904803" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Downloads\fwdggj2015telasintro\TELAINTRO_ET.png">
+                        <collision-poly>
+                            <point x="0.288086" y="0.384115" />
+                            <point x="0.5" y="0.139323" />
+                            <point x="0.703125" y="0.395833" />
+                            <point x="0.708008" y="0.610677" />
+                            <point x="0.5" y="1" />
+                            <point x="0.274414" y="0.634115" />
+                            <point x="0.276367" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SprTerra" sid="618126407379395">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="1087923015894182">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="1562404292796373">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3756056740436807" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Downloads\fwdggj2015telasintro\TELAINTRO_PLANETA.png">
+                        <collision-poly>
+                            <point x="0.204102" y="0.272135" />
+                            <point x="0.5" y="0.0442708" />
+                            <point x="0.795898" y="0.272135" />
+                            <point x="0.841797" y="0.5" />
+                            <point x="0.795898" y="0.727865" />
+                            <point x="0.5" y="0.954427" />
+                            <point x="0.204102" y="0.727865" />
+                            <point x="0.158203" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SprBracos" sid="8809646742138706">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4690067806756252" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Downloads\fwdggj2015telasintro\TELAINTRO_BRACO.png">
+                        <collision-poly>
+                            <point x="0.782227" y="0.5" />
+                            <point x="0.862305" y="0.816406" />
+                            <point x="0.136719" y="0.817708" />
+                            <point x="0.198242" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SprLua" sid="5171901556747312">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="3543248982422171">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5996052759546578" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Downloads\fwdggj2015telasintro\TELAINTRO_LUA.png">
+                        <collision-poly>
+                            <point x="0.5" y="0" />
+                            <point x="0.407227" y="0.209635" />
+                            <point x="0.5" y="0.233073" />
+                            <point x="0.601563" y="0.197917" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SprBack" sid="4240152491047209">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5144828725034583" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Downloads\fwdggj2015telasintro\TELAINTRO_ESPACO.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.999023" y="0.00130208" />
+                            <point x="0.999023" y="0.998698" />
+                            <point x="0.000976563" y="0.998698" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SprNuvens" sid="3469337933859628">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="5969262198638121">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="7307963378705292">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2540659614578222" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Downloads\fwdggj2015telasintro\TELAINTRO_nuvem.png">
+                        <collision-poly>
+                            <point x="0.556641" y="0.742188" />
+                            <point x="0.5" y="0.983073" />
+                            <point x="0.448242" y="0.735677" />
+                            <point x="0.5" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SprTit2" sid="8287685274800822">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5951808241549549" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Downloads\fwdggj2015telasintro\TELAINTRO_titulo02.png">
+                        <collision-poly>
+                            <point x="0.09375" y="0.125" />
+                            <point x="0.5" y="0.0559896" />
+                            <point x="0.341797" y="0.122396" />
+                            <point x="0.65918" y="0.121094" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SprTit3" sid="6027329205403362">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3292679364546201" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Downloads\fwdggj2015telasintro\TELAINTRO_titulo03.png">
+                        <collision-poly>
+                            <point x="0.09375" y="0.125" />
+                            <point x="0.5" y="0.0559896" />
+                            <point x="0.344727" y="0.126302" />
+                            <point x="0.657227" y="0.123698" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SprTit4" sid="191450381939731">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1620294984852143" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Downloads\fwdggj2015telasintro\TELAINTRO_titulo01.png">
+                        <collision-poly>
+                            <point x="0.5" y="0.0559896" />
+                            <point x="0.344727" y="0.126302" />
+                            <point x="0.657227" y="0.123698" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SprNewAC" sid="1562218587937329">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1988049805483133" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Downloads\ggj2015menuintro\bt_newgame_ativado.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SprLoadAC" sid="3883249684589125">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7874268634090478" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Downloads\ggj2015menuintro\bt_loadgame_ativado.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SprCreditsAC" sid="3930779777010584">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4055785540926335" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\SamuelOPH\Downloads\ggj2015menuintro\bt_credits_ativado.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="2884226123817084">
+            <plugin id="Audio" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -825,9 +1067,30 @@
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="6" />
+        <global-instance type="Audio" uid="86">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+                <speed-of-sound>5000</speed-of-sound>
+                <doppler-factor>1</doppler-factor>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
-    <music-folder />
+    <music-folder>
+        <file name="title1.m4a" />
+        <file name="title1.ogg" />
+        <file name="title2.m4a" />
+        <file name="title2.ogg" />
+    </music-folder>
     <files-folder>
         <file-folder name="Icons">
             <file name="icon-16.png" />

@@ -3,17 +3,279 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet Menu</name>
     <events>
-        <event-block sid="9237406617799539">
+        <variable constant="0" name="menusel" sid="4099294948879123" static="0" type="number">0</variable>
+        <event-block sid="6364387902553973">
             <conditions>
-                <condition id="0" name="On key pressed" sid="1244610184133469" type="Keyboard">
-                    <param id="0" name="Key">13 (Return)</param>
+                <condition id="-2" name="Compare Y" sid="3538204236404915" type="SprTerra">
+                    <param id="0" name="Comparison">4</param>
+                    <param id="1" name="Y co-ordinate">470</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="2995614670287159" type="System">
-                    <param id="0" name="Layout">Tutorial</param>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="25063004922067" type="SprTerra">
+                    <param id="0" name="Control">2</param>
+                </action>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="4563094641321349" type="SprNuvens">
+                    <param id="0" name="Control">2</param>
+                </action>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="6034959463633258" type="SprLua">
+                    <param id="0" name="Control">3</param>
                 </action>
             </actions>
+        </event-block>
+        <event-block sid="1635752294351344">
+            <conditions>
+                <condition behavior="8Direction" id="0" inverted="1" name="Is moving" sid="2846827257028597" type="SprTerra" />
+            </conditions>
+            <actions>
+                <action behavior="Sine" id="0" name="Set active" sid="7364972549483198" type="SprNuvens">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="3700641416261978" type="SprTerra">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3289412279097022">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="3341528782373481" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="1204196429795949" type="System">
+                    <param id="0" name="Variable">menusel</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7239911792024903">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="1607542198364963" type="Keyboard">
+                    <param id="0" name="Key">40 (Down arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="9757116911914559" type="System">
+                    <param id="0" name="Variable">menusel</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="104566339769903">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5988824832626943" type="System">
+                    <param id="0" name="Variable">menusel</param>
+                    <param id="1" name="Comparison">2</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="72554869979162" type="System">
+                    <param id="0" name="Variable">menusel</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9251993777719452">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2181627903436796" type="System">
+                    <param id="0" name="Variable">menusel</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8602330421892801" type="System">
+                    <param id="0" name="Variable">menusel</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4836762046434933">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="4890033963604707" type="System">
+                    <param id="0" name="Variable">menusel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="8736669851525226" type="SprNewD" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="2823144120478535" type="SprNewAC">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2937024847251592">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5472796326600369" type="System">
+                    <param id="0" name="Variable">menusel</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="9054879026590456" type="SprNewAC">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9303085821246568">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="2938969945876666" type="System">
+                    <param id="0" name="Variable">menusel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="1896028740910454" type="SprLoadD" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="160756319020657" type="SprLoadAC">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="857767119939852">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6639579429849924" type="System">
+                    <param id="0" name="Variable">menusel</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="6325141895241237" type="SprLoadAC">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7540752642714615">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7974716537789363" type="System">
+                    <param id="0" name="Variable">menusel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-9" name="Is visible" sid="9843742982487913" type="SprCreditsD" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="400840243058628" type="SprCreditsAC">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8010336183391422">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="118646128927561" type="System">
+                    <param id="0" name="Variable">menusel</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="1732852302920229" type="SprCreditsAC">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5878741554301319">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="7999113505222789" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5614496714087996" type="System">
+                    <param id="0" name="Variable">menusel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="2701299613668005">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8630137972545505" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4203453401919863" type="System">
+                    <param id="0" name="Variable">menusel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="3904065231524983">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="4291288944577912" type="Keyboard">
+                    <param id="0" name="Key">13 (Return)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3074606435548683" type="System">
+                    <param id="0" name="Variable">menusel</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="2065335835457589">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="7274796966299891">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="6979508698181702" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Preload" sid="6032784337540607" type="Audio">
+                    <param id="0" name="Audio file">title1</param>
+                </action>
+                <action id="0" name="Play" sid="7767758929923107" type="Audio">
+                    <param id="0" name="Audio file">title1</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;1&quot;</param>
+                </action>
+                <action id="4" name="Preload" sid="4583846899205572" type="Audio">
+                    <param id="0" name="Audio file">title2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block bookmark="1" sid="8401150470482756">
+            <conditions>
+                <condition id="4" inverted="1" name="Is any playing" sid="8532644688523367" type="Audio" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="2796288566704606" type="Audio">
+                    <param id="0" name="Audio file">title2</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3351700503856144">
+            <conditions>
+                <condition id="-2" name="Compare Y" sid="1863145950514052" type="SprTerra">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Y co-ordinate">390</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="6578040146464346" type="SprCreditsD">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="7610776047081278" type="SprLoadD">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6958385101909772" type="SprNewD">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9888437717065806">
+            <conditions />
+            <actions />
         </event-block>
     </events>
 </c2eventsheet>
