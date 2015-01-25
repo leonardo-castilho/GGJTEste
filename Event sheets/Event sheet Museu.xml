@@ -288,6 +288,9 @@
                 <condition id="-25" name="On loader layout complete" sid="7447915064203952" type="System" />
             </conditions>
             <actions>
+                <action behavior="Platform" id="4" name="Set jump strength" sid="1858264275293423" type="personagemPrincipalFase">
+                    <param id="0" name="Jump strength">800</param>
+                </action>
                 <action id="4" name="Preload" sid="6390191322544938" type="Audio">
                     <param id="0" name="Audio file">museu</param>
                 </action>

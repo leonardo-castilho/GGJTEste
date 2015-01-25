@@ -1246,6 +1246,7 @@
                 <instance-variable name="Jogadas" sid="801759028442439" type="number" />
                 <instance-variable name="jogadorMapaPosX" sid="7594655026136008" type="number" />
                 <instance-variable name="jogadorMapaPosY" sid="2196812983752904" type="number" />
+                <instance-variable name="jogadorForcaPulo" sid="6023511810993383" type="number" />
             </instance-variables>
         </object-type>
         <object-type name="Sprite8" sid="588969956503057">

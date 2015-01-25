@@ -218,23 +218,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="354064565758544" title="Teste">
-            <sub-events>
-                <event-block sid="4625192263074665">
-                    <conditions>
-                        <condition id="-7" name="Compare time" sid="1363680052762475" type="System">
-                            <param id="0" name="Comparison">0</param>
-                            <param id="1" name="Time (seconds)">1.0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action behavior="Platform" id="4" name="Set jump strength" sid="6617661142447412" type="personagemPrincipalFase">
-                            <param id="0" name="Jump strength">800</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-group>
         <event-block sid="6405682502715722">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="5200128211217917" type="personagemPrincipalFase">
@@ -288,6 +271,9 @@
                 <condition id="-25" name="On loader layout complete" sid="4668173459229634" type="System" />
             </conditions>
             <actions>
+                <action behavior="Platform" id="4" name="Set jump strength" sid="5766941113933446" type="personagemPrincipalFase">
+                    <param id="0" name="Jump strength">800</param>
+                </action>
                 <action id="4" name="Preload" sid="1107010407855495" type="Audio">
                     <param id="0" name="Audio file">Caverna</param>
                 </action>

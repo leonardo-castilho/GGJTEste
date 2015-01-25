@@ -75,8 +75,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>88.371315002</x>
-                        <y>179</y>
+                        <x>108</x>
+                        <y>242</y>
                         <z>0</z>
                         <width>172</width>
                         <height>11</height>
@@ -432,10 +432,10 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>789</x>
-                        <y>324</y>
+                        <x>783.956665039</x>
+                        <y>317.157836914</y>
                         <z>0</z>
-                        <width>714</width>
+                        <width>731</width>
                         <height>10</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
@@ -1136,7 +1136,7 @@
                                 <max-speed>330</max-speed>
                                 <acceleration>1500</acceleration>
                                 <deceleration>1500</deceleration>
-                                <jump-strength>0</jump-strength>
+                                <jump-strength>800</jump-strength>
                                 <gravity>1500</gravity>
                                 <max-fall-speed>1000</max-fall-speed>
                                 <double-jump>Disabled</double-jump>
@@ -1155,8 +1155,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>64</x>
-                        <y>124</y>
+                        <x>83</x>
+                        <y>187</y>
                         <z>0</z>
                         <width>103</width>
                         <height>100</height>
@@ -1410,6 +1410,35 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="chao" uid="159">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>288.5</x>
+                        <y>24</y>
+                        <z>0</z>
+                        <width>570</width>
+                        <height>11</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -1423,8 +1452,9 @@
             </properties>
             <instance-variables>
                 <Jogadas>0</Jogadas>
-                <jogadorMapaPosX>1500</jogadorMapaPosX>
-                <jogadorMapaPosY>1500</jogadorMapaPosY>
+                <jogadorMapaPosX>1600</jogadorMapaPosX>
+                <jogadorMapaPosY>973</jogadorMapaPosY>
+                <jogadorForcaPulo>0</jogadorForcaPulo>
             </instance-variables>
         </instance>
     </nonworld-instances>

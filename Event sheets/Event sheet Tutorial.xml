@@ -153,6 +153,10 @@
                     <param id="0" name="Variable">Estado_Pulo_Inic</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="-10" name="Set value" sid="9520009440323842" type="Dados">
+                    <param id="0" name="Instance variable">jogadorForcaPulo</param>
+                    <param id="1" name="Value">800</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="9828139471138167">
