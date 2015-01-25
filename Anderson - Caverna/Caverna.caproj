@@ -31,8 +31,8 @@
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
     <window-size>
-        <width>854</width>
-        <height>480</height>
+        <width>1024</width>
+        <height>768</height>
     </window-size>
     <pixel-rounding>0</pixel-rounding>
     <preview-effects>1</preview-effects>
@@ -384,6 +384,62 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3407144072905639" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Anderson\Desktop\GGJTEste\Anderson - Caverna\patterfloortest.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Cano3" sid="7456667813113603">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="3595034171495658">
+                    <behavior id="Sin" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="1105947722304715">
+                    <behavior id="Pin" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="1262051639175348">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8087099494054254" speed="5">
+                    <frame duration="1" hotspotX="0.016" hotspotY="0.488" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="plataformaFlutuanteH" sid="2484581458631199">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="4658897907128033">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="7712122725275874">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3996319290920259" speed="5">
+                    <frame duration="1" hotspotX="0.272" hotspotY="0.22" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sensor" sid="9155040089547038">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6282300413182018" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="paredePodre" sid="7079193036712865">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="529844514693557">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1114268203354848" speed="5">
+                    <frame duration="1" hotspotX="0.48" hotspotY="1" />
                 </animation>
             </animation-folder>
         </object-type>
