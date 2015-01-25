@@ -2,5 +2,275 @@
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet Museu</name>
-    <events />
+    <events>
+        <event-block sid="7454312309905748">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="3749128490010455" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="6834959051406723" type="personagemPrincipalFase">
+                    <param id="0" name="Animation">&quot;MoverDireita&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3272911822397431">
+            <conditions>
+                <condition id="3" name="On key released" sid="1743454324353509" type="Keyboard">
+                    <param id="0" name="Key">39 (Right arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="7619801087514851" type="personagemPrincipalFase" />
+            </actions>
+        </event-block>
+        <event-block sid="5716629109770802">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="8633064549791885" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8103365939638892" type="personagemPrincipalFase">
+                    <param id="0" name="Animation">&quot;MoverEsquerda&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4171349890822818">
+            <conditions>
+                <condition id="3" name="On key released" sid="132110224676171" type="Keyboard">
+                    <param id="0" name="Key">37 (Left arrow)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Stop" sid="2683131022965634" type="personagemPrincipalFase" />
+            </actions>
+        </event-block>
+        <event-group description="" sid="6649437973418316" title="Plataforma2">
+            <sub-events>
+                <event-block sid="9394715238123099">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="3342294368401315" type="personagemPrincipalFase">
+                            <param id="0" name="Object">plataformaFlutuante</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="9913468514937638" type="personagemPrincipalFase">
+                            <param id="0" name="Angle">plataformaFlutuante.Angle</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4045945635809132">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6948749134670283" type="personagemPrincipalFase">
+                            <param id="0" name="Object">chao</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="5946911078653636" type="personagemPrincipalFase">
+                            <param id="0" name="Angle">chao.Angle</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="6273563769742501" title="Agua2">
+            <sub-events>
+                <event-block sid="8334477837384463">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1731047070044369" type="personagemPrincipalFase">
+                            <param id="0" name="Object">Agua</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="1796475033417379" type="personagemPrincipalFase">
+                            <param id="0" name="Vector Y">300</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7749728850553092">
+                    <conditions>
+                        <condition id="1" name="Is overlapping another object" sid="1101572655116741" type="Agua">
+                            <param id="0" name="Object">personagemPrincipalFase</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="5" name="Set gravity" sid="804276660173486" type="personagemPrincipalFase">
+                            <param id="0" name="Gravity">100</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="9988869279335837">
+                            <conditions>
+                                <condition id="0" name="On key pressed" sid="7558672579449206" type="Keyboard">
+                                    <param id="0" name="Key">38 (Up arrow)</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="Platform" id="9" name="Set vector Y" sid="4014386918645764" type="personagemPrincipalFase">
+                                    <param id="0" name="Vector Y">-100</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="9808555176210139">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="5892492035285619" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="5" name="Set gravity" sid="1700598421027376" type="personagemPrincipalFase">
+                            <param id="0" name="Gravity">1500</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="4981278597091298" title="SanfonaDoBiArticulado2">
+            <sub-events>
+                <event-block sid="5027996252756265">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="349434923683289" type="SanfonaDoBiArticulado">
+                            <param id="0" name="Object">personagemPrincipalFase</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="5758331933052273" type="personagemPrincipalFase">
+                            <param id="0" name="Angle">SanfonaDoBiArticulado.Angle</param>
+                        </action>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="1232532819041468" type="personagemPrincipalFase">
+                            <param id="0" name="Vector Y">-700</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2803479242898606">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="1701977776079158" type="personagemPrincipalFase">
+                            <param id="0" name="Object">Cano</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="3194189507155067" type="personagemPrincipalFase">
+                            <param id="0" name="Angle">Cano.Angle</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1227685350351022">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="2230877991454126" type="personagemPrincipalFase">
+                            <param id="0" name="Object">Cano2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="3625927841609273" type="personagemPrincipalFase">
+                            <param id="0" name="Angle">Cano2.Angle</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6983247882762127">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="5731965266936872" type="personagemPrincipalFase">
+                            <param id="0" name="Object">Cano3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="3459884573103924" type="personagemPrincipalFase">
+                            <param id="0" name="Angle">Cano3.Angle</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9923401974938086">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="7877237308283022" type="personagemPrincipalFase">
+                            <param id="0" name="Object">paredePodre</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="1335376761202223" type="System">
+                            <param id="0" name="First value">paredePodre.Angle</param>
+                            <param id="1" name="Comparison">2</param>
+                            <param id="2" name="Second value">275</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-8" name="Set angle" sid="6668541929637191" type="personagemPrincipalFase">
+                            <param id="0" name="Angle">paredePodre.Angle-275</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="8214513861256171" title="PlataformaQueCai2">
+            <sub-events>
+                <event-block sid="6360136594233985">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6324520817948168" type="personagemPrincipalFase">
+                            <param id="0" name="Object">PlataformaQueCai</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="1191875514402969" type="System">
+                            <param id="0" name="Seconds">0.2</param>
+                        </action>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="2810590850636853" type="PlataformaQueCai">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6641913575438983">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="806302265733509" type="Sprite2">
+                            <param id="0" name="Object">personagemPrincipalFase</param>
+                        </condition>
+                        <condition id="-11" name="Is within angle" sid="4229643904238641" type="Sprite2">
+                            <param id="0" name="Within">0.5</param>
+                            <param id="1" name="Angle">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-21" name="Rotate toward position" sid="9883578871759815" type="Sprite2">
+                            <param id="0" name="Degrees">-20</param>
+                            <param id="1" name="X">0</param>
+                            <param id="2" name="Y">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4255163916235794">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="6043416387794201" type="paredePodre">
+                            <param id="0" name="Object">personagemPrincipalFase</param>
+                        </condition>
+                        <condition id="-11" name="Is within angle" sid="2525682579569623" type="paredePodre">
+                            <param id="0" name="Within">100</param>
+                            <param id="1" name="Angle">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-21" name="Rotate toward position" sid="3472752097979267" type="paredePodre">
+                            <param id="0" name="Degrees">10</param>
+                            <param id="1" name="X">0</param>
+                            <param id="2" name="Y">0</param>
+                        </action>
+                        <action behavior="Platform" id="9" name="Set vector Y" sid="9832618560747356" type="personagemPrincipalFase">
+                            <param id="0" name="Vector Y">-300</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="7308703746284492" title="PlataformaHorizontal" />
+        <event-block sid="9331966494437957">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9797891666148897" type="personagemPrincipalFase">
+                    <param id="0" name="Object">sensor</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Sine" id="0" name="Set active" sid="2025812927121665" type="plataformaFlutuanteH">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
 </c2eventsheet>

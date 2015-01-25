@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Menu</layout>
-        <event-sheet active="1" order="2">Event sheet Menu</event-sheet>
+        <layout order="0">Fase Museu</layout>
+        <event-sheet active="1" order="1">Event sheet Museu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -82,5 +82,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/SprNewAC/" />
         <folder expanded="1" path="animation-folder/SprLoadAC/" />
         <folder expanded="1" path="animation-folder/SprCreditsAC/" />
+        <folder expanded="1" path="animation-folder/plataformaFlutuante/" />
+        <folder expanded="1" path="animation-folder/sensor/" />
+        <folder expanded="1" path="animation-folder/Cano3/" />
+        <folder expanded="1" path="animation-folder/paredePodre/" />
+        <folder expanded="1" path="animation-folder/plataformaFlutuanteH/" />
     </folders-expanded>
 </c2uistate>

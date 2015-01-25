@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet Tutorial</name>
     <events>
+        <variable constant="0" name="Estado_Botao" sid="2215659818808961" static="0" type="number">0</variable>
         <variable constant="0" name="Liberar_Personagem" sid="4199624368649152" static="0" type="number">0</variable>
         <variable constant="0" name="Gatilho" sid="6490650890575538" static="0" type="number">0</variable>
         <variable constant="0" name="Estado_Pulo_Inic" sid="5537971140393507" static="0" type="number">0</variable>
@@ -51,7 +52,7 @@
                             <param id="0" name="Object">Botao_Tuto</param>
                         </condition>
                         <condition id="-14" name="Compare variable" sid="8896825027122775" type="System">
-                            <param id="0" name="Variable">Estado_Pulo_Inic</param>
+                            <param id="0" name="Variable">Estado_Botao</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
@@ -68,6 +69,26 @@
                             <param id="1" name="From">1</param>
                         </action>
                         <action id="-9" name="Set value" sid="2536223405751644" type="System">
+                            <param id="0" name="Variable">Estado_Botao</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9480380849212458">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="9202448413454765" type="System">
+                            <param id="0" name="Variable">Estado_Pulo_Inic</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5126729950338966" type="System">
+                            <param id="0" name="Variable">Estado_Botao</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="4760029388914112" type="System">
                             <param id="0" name="Variable">Estado_Pulo_Inic</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -224,6 +245,54 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="5052010243109613" type="System">
                     <param id="0" name="Layout">Mapa</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7810016023460627">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="4338109524015663" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Preload" sid="499911051550634" type="Audio">
+                    <param id="0" name="Audio file">queda da caixa</param>
+                </action>
+                <action id="4" name="Preload" sid="8925980445916474" type="Audio">
+                    <param id="0" name="Audio file">pulo</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7456978578033253">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="299461639248621" type="itemMola">
+                    <param id="0" name="Object">chaoTutorial</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9286545348872731" type="Audio">
+                    <param id="0" name="Audio file">queda da caixa</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2359649799231853">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="2240137682568271" type="Keyboard">
+                    <param id="0" name="Key">38 (Up arrow)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7904421168318655" type="System">
+                    <param id="0" name="Variable">Estado_Pulo_Inic</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="6738528113511238" type="Audio">
+                    <param id="0" name="Audio file">pulo</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
                 </action>
             </actions>
         </event-block>
