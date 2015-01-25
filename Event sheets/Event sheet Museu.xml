@@ -272,5 +272,54 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="2909775230078746">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="2907303692454825" type="personagemPrincipalFase" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3640947032544287" type="System">
+                    <param id="0" name="Layout">Mapa</param>
+                </action>
+                <action id="33" name="Stop all" sid="6758575130449454" type="Audio" />
+            </actions>
+        </event-block>
+        <event-block sid="7287790359395923">
+            <conditions>
+                <condition id="-25" name="On loader layout complete" sid="7447915064203952" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Preload" sid="6390191322544938" type="Audio">
+                    <param id="0" name="Audio file">museu</param>
+                </action>
+                <action id="0" name="Play" sid="5816685721286578" type="Audio">
+                    <param id="0" name="Audio file">museu</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3300470633718051">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="615526978461462" type="personagemPrincipalFase">
+                    <param id="0" name="Object">Sprite5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="561284229298891" type="System">
+                    <param id="0" name="Layout">Mapa</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7579818386657744">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2715350259347706" type="personagemPrincipalFase">
+                    <param id="0" name="Object">Sprite4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="2694790016120986" type="Sprite4" />
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

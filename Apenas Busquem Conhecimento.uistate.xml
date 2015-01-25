@@ -10,8 +10,8 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="0">Fase Caverna</layout>
-        <event-sheet active="1" order="1">Event sheet Fase Caverna</event-sheet>
+        <layout active="1" order="0">Fase Museu</layout>
+        <event-sheet order="1">Event sheet Museu</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -87,5 +87,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Cano3/" />
         <folder expanded="1" path="animation-folder/paredePodre/" />
         <folder expanded="1" path="animation-folder/plataformaFlutuanteH/" />
+        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/pedra1/" />
+        <folder expanded="1" path="animation-folder/pedra2/" />
+        <folder expanded="1" path="animation-folder/pedra3/" />
+        <folder expanded="1" path="animation-folder/chao3/" />
     </folders-expanded>
 </c2uistate>

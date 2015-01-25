@@ -304,11 +304,8 @@
                 <condition id="0" name="On key pressed" sid="4195186760711896" type="Keyboard">
                     <param id="0" name="Key">38 (Up arrow)</param>
                 </condition>
-                <condition id="9" name="Is overlapping at offset" sid="6031622437765147" type="personagemPrincipalFase">
-                    <param id="0" name="Object">chao2</param>
-                    <param id="1" name="Offset X">2</param>
-                    <param id="2" name="Offset Y">2</param>
-                </condition>
+                <condition behavior="Platform" id="3" inverted="1" name="Is jumping" sid="6031622437765147" type="personagemPrincipalFase" />
+                <condition behavior="Platform" id="4" inverted="1" name="Is falling" sid="3848971224552105" type="personagemPrincipalFase" />
             </conditions>
             <actions>
                 <action id="0" name="Play" sid="9939440534868392" type="Audio">
@@ -319,64 +316,37 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="793132151633759">
+        <event-block sid="7274072095213525">
             <conditions>
-                <condition id="0" name="On key pressed" sid="7782217059079202" type="Keyboard">
-                    <param id="0" name="Key">38 (Up arrow)</param>
-                </condition>
-                <condition id="9" name="Is overlapping at offset" sid="3818450393567152" type="personagemPrincipalFase">
-                    <param id="0" name="Object">chao</param>
-                    <param id="1" name="Offset X">2</param>
-                    <param id="2" name="Offset Y">2</param>
+                <condition id="0" name="On collision with another object" sid="4688033121904574" type="personagemPrincipalFase">
+                    <param id="0" name="Object">Sprite5</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="3005599426644189" type="Audio">
-                    <param id="0" name="Audio file">pulo</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-20</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                <action id="-2" name="Go to layout" sid="764931306309809" type="System">
+                    <param id="0" name="Layout">Mapa</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="8997650261900459">
+        <event-block sid="1247325150818531">
             <conditions>
-                <condition id="0" name="On key pressed" sid="8440409268100126" type="Keyboard">
-                    <param id="0" name="Key">38 (Up arrow)</param>
-                </condition>
-                <condition id="9" name="Is overlapping at offset" sid="6793801428911079" type="personagemPrincipalFase">
-                    <param id="0" name="Object">chaoInclinado</param>
-                    <param id="1" name="Offset X">2</param>
-                    <param id="2" name="Offset Y">2</param>
-                </condition>
+                <condition id="-19" name="On destroyed" sid="2376296397337432" type="personagemPrincipalFase" />
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="9474056835439692" type="Audio">
-                    <param id="0" name="Audio file">pulo</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-20</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                <action id="-2" name="Go to layout" sid="6580373037556593" type="System">
+                    <param id="0" name="Layout">Mapa</param>
                 </action>
+                <action id="33" name="Stop all" sid="2505683729336841" type="Audio" />
             </actions>
         </event-block>
-        <event-block sid="3893229284442634">
+        <event-block sid="4174957963894135">
             <conditions>
-                <condition id="0" name="On key pressed" sid="3628375961766283" type="Keyboard">
-                    <param id="0" name="Key">38 (Up arrow)</param>
-                </condition>
-                <condition id="9" name="Is overlapping at offset" sid="8398274319237364" type="personagemPrincipalFase">
-                    <param id="0" name="Object">chaoInclinadoInvertido</param>
-                    <param id="1" name="Offset X">2</param>
-                    <param id="2" name="Offset Y">2</param>
+                <condition id="0" name="On collision with another object" sid="2425050267523433" type="personagemPrincipalFase">
+                    <param id="0" name="Object">Sprite4</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="0" name="Play" sid="5215295136419434" type="Audio">
-                    <param id="0" name="Audio file">pulo</param>
-                    <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">-20</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
+                <action id="-9" name="Destroy" sid="1778394243901095" type="Sprite4" />
             </actions>
         </event-block>
     </events>
