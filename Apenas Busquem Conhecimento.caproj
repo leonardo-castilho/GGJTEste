@@ -12,9 +12,11 @@
     <used-plugins>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
         <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
         <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
         <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
@@ -53,22 +55,6 @@
         <prop name="Use high-DPI display">Yes</prop>
     </configuration-settings>
     <object-folder>
-        <object-type name="personagemPrincipalMapa_old" sid="416824744172186">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="8Direction" sid="5421443334435282">
-                    <behavior id="EightDir" />
-                </behavior-type>
-                <behavior-type name="ScrollTo" sid="211563815399775">
-                    <behavior id="scrollto" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Parado" pingpong="0" repeatcount="1" repeatto="0" sid="2002590900630973" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\frente\frente_01.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="borda" sid="8039396281199975">
             <plugin id="Sprite" />
             <behaviors>
@@ -120,30 +106,6 @@
                     <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_02.png" />
                     <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_03.png" />
                     <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_04.png" />
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="Botao_Tuto_old" sid="4694416696928753">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Physics" sid="3668990851775196">
-                    <behavior id="Physics" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="666266635562274" speed="5">
-                    <frame duration="1" hotspotX="0.509434" hotspotY="0.5" original-source="C:\Users\Casteia\Desktop\Imagens GGJ\botao_inativo.png">
-                        <collision-poly>
-                            <point x="0.0188679" y="0.0142857" />
-                            <point x="0.490566" y="0" />
-                            <point x="0.981132" y="0.0142857" />
-                            <point x="1" y="0.5" />
-                            <point x="0.981132" y="0.985714" />
-                            <point x="0.490566" y="1" />
-                            <point x="0.0188679" y="0.985714" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -298,7 +260,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="saidaMapa" sid="2029766333225586">
+        <object-type name="saidaTutorial" sid="2029766333225586">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2468414498481209" speed="5">
@@ -379,22 +341,6 @@
                             <point x="0.490566" y="1" />
                             <point x="0.0188679" y="0.985714" />
                             <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="caixaDialogo" sid="2126522188981552">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2858113797856602" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Desktop\Imagens GGJ\quadro_dialogo_bilu.png">
-                        <collision-poly>
-                            <point x="0.635742" y="0.847656" />
-                            <point x="0.364258" y="0.847656" />
-                            <point x="0.933594" y="0.911458" />
-                            <point x="0.5" y="1" />
-                            <point x="0.0966797" y="0.871094" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -661,16 +607,72 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\costas\costas_04.png" />
                 </animation>
                 <animation framecount="4" loop="1" name="MoverDireita" pingpong="0" repeatcount="1" repeatto="0" sid="5007524964307098" speed="5">
-                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png" />
-                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_02.png" />
-                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_03.png" />
-                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_04.png" />
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_02.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_03.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_04.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
                 </animation>
                 <animation framecount="4" loop="1" name="MoverEsquerda" pingpong="0" repeatcount="1" repeatto="0" sid="1122878296928794" speed="5">
-                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png" />
-                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_02.png" />
-                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_03.png" />
-                    <frame duration="1" hotspotX="0.504854" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_04.png" />
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_01.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_02.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_03.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.495146" hotspotY="0.5" original-source="C:\Users\Casteia\Documents\GitHub\GGJTEste\sprites\lado\lado_04.png">
+                        <collision-poly>
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0" />
+                            <point x="1" y="0" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -741,6 +743,65 @@
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4621416750674984" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Next_Text" sid="5227108821004902">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="5572767579815188">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Convers_Text" sid="777389643205053">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="8905081313701445">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="Botao_ACt_Tex" sid="7296229517764166">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Ja_passou" sid="1041273942139881" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6953597791631458" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Convers_Tuto" sid="5141185546685282">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="9547129496819185">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4224595055390183" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\quadro_dialogo_bilu.png">
+                        <collision-poly>
+                            <point x="0.635742" y="0.847656" />
+                            <point x="0.364258" y="0.847656" />
+                            <point x="0.933594" y="0.911458" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0966797" y="0.871094" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Voar" pingpong="0" repeatcount="1" repeatto="0" sid="5847266493264017" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\quadro_dialogo_bilu.png">
+                        <collision-poly>
+                            <point x="0.635742" y="0.847656" />
+                            <point x="0.364258" y="0.847656" />
+                            <point x="0.933594" y="0.911458" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0966797" y="0.871094" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>

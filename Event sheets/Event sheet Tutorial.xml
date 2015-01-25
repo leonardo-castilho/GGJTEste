@@ -3,46 +3,71 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Event sheet Tutorial</name>
     <events>
-        <event-block sid="7169322443146988">
-            <conditions />
-            <actions />
-        </event-block>
+        <variable constant="0" name="Liberar_Personagem" sid="4199624368649152" static="0" type="number">0</variable>
+        <variable constant="0" name="Gatilho" sid="6490650890575538" static="0" type="number">0</variable>
         <variable constant="0" name="Estado_Pulo_Inic" sid="5537971140393507" static="0" type="number">0</variable>
-        <event-block sid="5291954299416622">
-            <conditions />
-            <actions />
-        </event-block>
-        <event-block sid="530480863061241">
+        <event-block sid="5537514551609149">
             <conditions>
-                <condition id="2" name="Key is down" sid="8594801579157254" type="Keyboard">
+                <condition behavior="Fade" id="1" name="On fade-in finished" sid="5909820179652495" type="Convers_Tuto" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="2278748868480131" type="personagemPrincipalFase">
+                    <param id="0" name="Max Speed">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="8325802401422423" type="tutorialBackground">
+                    <param id="0" name="Opacity">90</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9411824124936905">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5944871428987168" type="System">
+                    <param id="0" name="Variable">Liberar_Personagem</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="2" name="Key is down" sid="268839611855481" type="Keyboard">
                     <param id="0" name="Key">32 (Space)</param>
                 </condition>
             </conditions>
-            <actions />
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="7837555150767449" type="personagemPrincipalFase">
+                    <param id="0" name="Max Speed">330</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="8450811523010113" type="tutorialBackground">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="8785647523442552" type="Convers_Text">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="6261985353552402" type="Next_Text">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+            </actions>
             <sub-events>
-                <event-block sid="7403037407695681">
+                <event-block sid="8268264597493526">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="254609104107078" type="personagemPrincipalFase">
+                        <condition id="0" name="On collision with another object" sid="5745223405165913" type="personagemPrincipalFase">
                             <param id="0" name="Object">Botao_Tuto</param>
                         </condition>
-                        <condition id="-14" name="Compare variable" sid="1447132723668016" type="System">
+                        <condition id="-14" name="Compare variable" sid="8896825027122775" type="System">
                             <param id="0" name="Variable">Estado_Pulo_Inic</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">0</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-3" name="Create object" sid="2200006736335425" type="System">
+                        <action id="-3" name="Create object" sid="2646933161008515" type="System">
                             <param id="0" name="Object to create">itemMola</param>
                             <param id="1" name="Layer">&quot;Layer 1&quot;</param>
                             <param id="2" name="X">100</param>
-                            <param id="3" name="Y">300</param>
+                            <param id="3" name="Y">0</param>
                         </action>
-                        <action id="4" name="Set animation" sid="6441011947163204" type="Botao_Tuto">
+                        <action id="4" name="Set animation" sid="7200502531978252" type="Botao_Tuto">
                             <param id="0" name="Animation">&quot;ligado&quot;</param>
                             <param id="1" name="From">1</param>
                         </action>
-                        <action id="-9" name="Set value" sid="5847288110112616" type="System">
+                        <action id="-9" name="Set value" sid="2536223405751644" type="System">
                             <param id="0" name="Variable">Estado_Pulo_Inic</param>
                             <param id="1" name="Value">1</param>
                         </action>
@@ -50,21 +75,98 @@
                 </event-block>
             </sub-events>
         </event-block>
-        <event-block sid="8485322728436921">
-            <conditions />
-            <actions />
-        </event-block>
-        <event-block sid="7977821018944219">
+        <event-block sid="8616407713201399">
             <conditions>
-                <condition id="0" name="On collision with another object" sid="9441124119826805" type="personagemPrincipalFase">
+                <condition id="3" name="On key released" sid="2170155335027772" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5814597538967109" type="System">
+                    <param id="0" name="Variable">Liberar_Personagem</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="581181350649038" type="Convers_Text">
+                    <param id="0" name="Text">&quot;Parece que algumas de suas peças foram expalhadas na aterrissagem. Você irá precisar delas para as pesquisas&quot;</param>
+                </action>
+                <action id="-9" name="Set value" sid="9805374462057959" type="System">
+                    <param id="0" name="Variable">Liberar_Personagem</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9226940465282703">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5093500929259915" type="personagemPrincipalFase">
                     <param id="0" name="Object">itemMola</param>
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Platform" id="4" name="Set jump strength" sid="9398950938547989" type="personagemPrincipalFase">
+                <action behavior="Platform" id="4" name="Set jump strength" sid="6565470445093677" type="personagemPrincipalFase">
                     <param id="0" name="Jump strength">800</param>
                 </action>
-                <action id="-9" name="Destroy" sid="1345545566245101" type="itemMola" />
+                <action id="-9" name="Destroy" sid="9098980274051834" type="itemMola" />
+                <action id="-16" name="Set opacity" sid="7393544427433464" type="Convers_Tuto">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="1712920313195449" type="Convers_Text">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="5052667081458667" type="Next_Text">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="0" name="Set text" sid="8084101369847628" type="Convers_Text">
+                    <param id="0" name="Text">&quot;Você encontrou uma Mola Power MEGA 300. Para usa-la precione o direcional para cima em seu teclado.&quot;</param>
+                </action>
+                <action behavior="Platform" id="1" name="Set max speed" sid="4513005670553252" type="personagemPrincipalFase">
+                    <param id="0" name="Max Speed">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9828139471138167">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6425690654931506" type="personagemPrincipalFase">
+                    <param id="0" name="Object">Botao_ACt_Tex</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="1" name="Set max speed" sid="4309581523045908" type="personagemPrincipalFase">
+                    <param id="0" name="Max Speed">0</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="5084311205091001" type="Convers_Tuto">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-9" name="Destroy" sid="1574532941689636" type="Botao_ACt_Tex" />
+                <action id="-16" name="Set opacity" sid="7894509140269584" type="Next_Text">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="-16" name="Set opacity" sid="2177794861961983" type="Convers_Text">
+                    <param id="0" name="Opacity">100</param>
+                </action>
+                <action id="0" name="Set text" sid="4165797120571515" type="Convers_Text">
+                    <param id="0" name="Text">&quot;Precione espaço para acionar botões e alavancas&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4547276363224327">
+            <conditions>
+                <condition id="2" name="Key is down" sid="1999854291607111" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4617890488442814" type="System">
+                    <param id="0" name="Variable">Liberar_Personagem</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="5596545959441308" type="Convers_Tuto">
+                    <param id="0" name="Opacity">0</param>
+                </action>
+                <action behavior="Platform" id="1" name="Set max speed" sid="1358353001126576" type="personagemPrincipalFase">
+                    <param id="0" name="Max Speed">330</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="3769475045329551">
@@ -116,7 +218,7 @@
         <event-block sid="8304351719351184">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="3196588825217228" type="personagemPrincipalFase">
-                    <param id="0" name="Object">saidaMapa</param>
+                    <param id="0" name="Object">saidaTutorial</param>
                 </condition>
             </conditions>
             <actions>

@@ -11,8 +11,9 @@ you probably do not want to add any .uistate.xml files to the repository.-->
     </configurations>
     <open-tabs>
         <layout order="1">Menu</layout>
-        <layout active="1" order="2">Mapa</layout>
-        <event-sheet order="3">Event sheet Mapa</event-sheet>
+        <layout order="2">Tutorial</layout>
+        <layout active="1" order="4">Mapa</layout>
+        <event-sheet order="3">Event sheet Tutorial</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -29,23 +30,20 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="sound-folder/" />
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
-        <folder expanded="1" path="animation-folder/personagemPrincipalMapa_old/" />
         <folder expanded="1" path="animation-folder/borda/" />
         <folder expanded="1" path="animation-folder/iconeNave/" />
         <folder expanded="1" path="animation-folder/PPrincipal/" />
-        <folder expanded="1" path="animation-folder/Botao_Tuto_old/" />
         <folder expanded="1" path="animation-folder/plataforma/" />
         <folder expanded="1" path="animation-folder/chaoTutorial/" />
         <folder expanded="1" path="animation-folder/computador/" />
         <folder expanded="1" path="animation-folder/bordas/" />
         <folder expanded="1" path="animation-folder/Banana/" />
         <folder expanded="1" path="animation-folder/personagemPrincipalFase/" />
-        <folder expanded="1" path="animation-folder/saidaMapa/" />
+        <folder expanded="1" path="animation-folder/saidaTutorial/" />
         <folder expanded="1" path="animation-folder/entradaCaverna/" />
         <folder expanded="1" path="animation-folder/itemMola/" />
         <folder expanded="1" path="animation-folder/tutorialBackground/" />
         <folder expanded="1" path="animation-folder/Botao_Tuto/" />
-        <folder expanded="1" path="animation-folder/caixaDialogo/" />
         <folder expanded="1" path="animation-folder/chao/" />
         <folder expanded="1" path="animation-folder/Agua/" />
         <folder expanded="1" path="animation-folder/SanfonaDoBiArticulado/" />
@@ -68,5 +66,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/tilesetMapa6/" />
         <folder expanded="1" path="animation-folder/chaoInclinadoInvertido/" />
         <folder expanded="1" path="animation-folder/iconeMuseu/" />
+        <folder expanded="1" path="animation-folder/Botao_ACt_Tex/" />
+        <folder expanded="1" path="animation-folder/Convers_Tuto/" />
     </folders-expanded>
 </c2uistate>
