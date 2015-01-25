@@ -13,8 +13,10 @@
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
         <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
@@ -1125,16 +1127,11 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite5" sid="9859307898359419">
+        <object-type name="fimFase" sid="9859307898359419">
             <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Rotate" sid="9396406945534619">
-                    <behavior id="Rotate" />
-                </behavior-type>
-            </behaviors>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3776686392067631" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Casteia\Desktop\Imagens GGJ\ITEM_PULO.png">
                         <collision-poly>
                             <point x="0.192" y="0.192" />
                             <point x="0.5" y="0.064" />
@@ -1247,6 +1244,14 @@
                 <instance-variable name="jogadorMapaPosX" sid="7594655026136008" type="number" />
                 <instance-variable name="jogadorMapaPosY" sid="2196812983752904" type="number" />
                 <instance-variable name="jogadorForcaPulo" sid="6023511810993383" type="number" />
+                <instance-variable name="itemGameBoy" sid="423149530524988" type="number" />
+                <instance-variable name="itemFrigideira" sid="114557061128123" type="number" />
+                <instance-variable name="itemBanana" sid="5958167019724523" type="number" />
+                <instance-variable name="itemOsso" sid="3253977178877848" type="number" />
+                <instance-variable name="itemBolaDeBoliche" sid="7386214871308721" type="number" />
+                <instance-variable name="itemCigarro" sid="2514781099057984" type="number" />
+                <instance-variable name="itemMartelo" sid="6597820725179947" type="number" />
+                <instance-variable name="itemChicara" sid="2718265960806404" type="number" />
             </instance-variables>
         </object-type>
         <object-type name="Sprite8" sid="588969956503057">
@@ -1286,6 +1291,258 @@
                 </behavior-type>
             </behaviors>
         </object-type>
+        <object-type name="cigarro" sid="8105112054672685">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3804173999451928" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Windows\Leonardo\Área de Trabalho\itens\cigarro.png">
+                        <collision-poly>
+                            <point x="0.42" y="0.42" />
+                            <point x="0.5" y="0.34" />
+                            <point x="0.94" y="0.06" />
+                            <point x="0.64" y="0.5" />
+                            <point x="0.56" y="0.56" />
+                            <point x="0.5" y="0.62" />
+                            <point x="0.08" y="0.92" />
+                            <point x="0.32" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ball_item" sid="5065174130567523">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2208123332549338" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Windows\Leonardo\Área de Trabalho\itens\bola.png">
+                        <collision-poly>
+                            <point x="0.16" y="0.16" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.84" y="0.16" />
+                            <point x="0.98" y="0.5" />
+                            <point x="0.86" y="0.86" />
+                            <point x="0.5" y="1" />
+                            <point x="0.14" y="0.86" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="osso" sid="8835414708485118">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4603195172479867" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Windows\Leonardo\Área de Trabalho\itens\bone.png">
+                        <collision-poly>
+                            <point x="0.483333" y="0.483333" />
+                            <point x="0.5" y="0.45" />
+                            <point x="0.783333" y="0.216667" />
+                            <point x="0.566667" y="0.5" />
+                            <point x="0.533333" y="0.533333" />
+                            <point x="0.5" y="0.583333" />
+                            <point x="0.1" y="0.9" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Banana_Item" sid="8351338386051965">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1751362777065113" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Windows\Leonardo\Área de Trabalho\itens\banana copy.png">
+                        <collision-poly>
+                            <point x="0.68" y="0.68" />
+                            <point x="0.5" y="0.7" />
+                            <point x="0.36" y="0.64" />
+                            <point x="0.3" y="0.5" />
+                            <point x="0.86" y="0.86" />
+                            <point x="0.5" y="0.96" />
+                            <point x="0.18" y="0.82" />
+                            <point x="0.02" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Frigideira_item" sid="1387457164176379">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8831452850145033" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Windows\Leonardo\Área de Trabalho\itens\frideira.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Pinico_Item" sid="686671702448652">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="720927924661349" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Windows\Leonardo\Área de Trabalho\itens\pinico copy.png">
+                        <collision-poly>
+                            <point x="0.22" y="0.22" />
+                            <point x="0.5" y="0.2" />
+                            <point x="0.74" y="0.26" />
+                            <point x="0.88" y="0.5" />
+                            <point x="0.8" y="0.8" />
+                            <point x="0.5" y="0.98" />
+                            <point x="0.14" y="0.86" />
+                            <point x="0.06" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="game_item" sid="7598646360368559">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6056538614878745" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.509434" original-source="D:\Windows\Leonardo\Área de Trabalho\itens\GAMEBOY copy.png">
+                        <collision-poly>
+                            <point x="0.24" y="0.226415" />
+                            <point x="0.5" y="0.0188679" />
+                            <point x="0.86" y="0.132075" />
+                            <point x="0.86" y="0.490566" />
+                            <point x="0.74" y="0.754717" />
+                            <point x="0.5" y="1" />
+                            <point x="0.12" y="0.886792" />
+                            <point x="0.12" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Martelo_item" sid="9739125016163514">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1734241837734758" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Windows\Leonardo\Área de Trabalho\itens\martelo.png">
+                        <collision-poly>
+                            <point x="0.44" y="0.44" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.84" y="0.16" />
+                            <point x="0.52" y="0.5" />
+                            <point x="0.52" y="0.52" />
+                            <point x="0.5" y="0.52" />
+                            <point x="0.1" y="0.9" />
+                            <point x="0.38" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Aviso" sid="6445272674736273">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Fade" sid="1910890284180816">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="reSET_BTN" sid="1452758174331764">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6823058058083085" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cont_btn" sid="1939347138104051">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1134671868640106" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="8836964607883238">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text2" sid="5120851725737729">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Background_ant" sid="6184868771173814">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Windows\Leonardo\Área de Trabalho\tela_verde02 copy.png" />
+        </object-type>
+        <object-type name="TiledBackground7" sid="5283188083884092">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Windows\Leonardo\Área de Trabalho\menu_tela_verde.png" />
+        </object-type>
+        <object-type name="SLOT1" sid="5910380163869639">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="SLOT2" sid="2004849016603914">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="SLOT3" sid="5702095353147331">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="SLOT4" sid="9621639329094117">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="SLOT77" sid="4564803531217788">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="SLOT66" sid="1626726222873736">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="SLOT9" sid="3712874581784688">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="SLOT10" sid="9421218162837677">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="SLOT5" sid="56924834219491">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="SLOT8" sid="4097289554309822">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="reset_tex" sid="4731017979143575">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Enviar_Text" sid="3002369296266699">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Mouse" sid="2112689682792879">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="var_text_2" sid="8724469515992917">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="1_var_texto" sid="9980952931825345">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Background_sup" sid="8061172983539035">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Fade" sid="1133374460022577">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="D:\Windows\Leonardo\Área de Trabalho\tela_verde02 copy.png" />
+        </object-type>
+        <object-type name="Text_ENVIANDO" sid="5927230783195221">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Gen_text" sid="2396817821188342">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="depara" sid="7033244680219503">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="spriteCursorPisca" sid="9264437320191982">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1263899074952167" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families>
         <family name="Family1" plugin-id="Sprite" sid="5555769409402763">
@@ -1303,14 +1560,16 @@
         <layout>Fase Caverna.xml</layout>
         <layout>Tutorial.xml</layout>
         <layout>Fase Museu.xml</layout>
+        <layout>Game Pocket.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet Menu.xml</event-sheet>
         <event-sheet>Event sheet Diario.xml</event-sheet>
         <event-sheet>Event sheet Mapa.xml</event-sheet>
-        <event-sheet>Event sheet Fase Caverna.xml</event-sheet>
+        <event-sheet>Event sheet Caverna.xml</event-sheet>
         <event-sheet>Event sheet Tutorial.xml</event-sheet>
         <event-sheet>Event sheet Museu.xml</event-sheet>
+        <event-sheet>Event sheet Game Pocket.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Keyboard" uid="6" />
@@ -1330,6 +1589,7 @@
                 <doppler-factor>1</doppler-factor>
             </properties>
         </global-instance>
+        <global-instance type="Mouse" uid="195" />
     </global-instances>
     <sounds-folder>
         <file name="pulo.ogg" />

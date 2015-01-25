@@ -305,12 +305,12 @@
         <event-block sid="3300470633718051">
             <conditions>
                 <condition id="0" name="On collision with another object" sid="615526978461462" type="personagemPrincipalFase">
-                    <param id="0" name="Object">Sprite5</param>
+                    <param id="0" name="Object">fimFase</param>
                 </condition>
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="561284229298891" type="System">
-                    <param id="0" name="Layout">Mapa</param>
+                    <param id="0" name="Layout">Game Pocket</param>
                 </action>
             </actions>
         </event-block>
@@ -451,5 +451,165 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="800156570674772">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6991835878686547" type="personagemPrincipalFase">
+                    <param id="0" name="Object">Banana_Item</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1306268417312652" type="Banana_Item" />
+                <action id="0" name="Play" sid="1913631011121892" type="Audio">
+                    <param id="0" name="Audio file">item</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="516603916440386" type="Dados">
+                    <param id="0" name="Instance variable">itemBanana</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="402255358583276">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1171184600940194" type="personagemPrincipalFase">
+                    <param id="0" name="Object">cigarro</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="1766294717987691" type="cigarro" />
+                <action id="0" name="Play" sid="5902251099512812" type="Audio">
+                    <param id="0" name="Audio file">item</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="6476501625399243" type="Dados">
+                    <param id="0" name="Instance variable">itemCigarro</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7378575133608641">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="9517220492858432" type="personagemPrincipalFase">
+                    <param id="0" name="Object">ball_item</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="6296985918616502" type="ball_item" />
+                <action id="0" name="Play" sid="8535306297756805" type="Audio">
+                    <param id="0" name="Audio file">item</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="3416283238179063" type="Dados">
+                    <param id="0" name="Instance variable">itemBolaDeBoliche</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3557076249468949">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1768208242802578" type="personagemPrincipalFase">
+                    <param id="0" name="Object">game_item</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="5011119330893051" type="game_item" />
+                <action id="0" name="Play" sid="1153617495092584" type="Audio">
+                    <param id="0" name="Audio file">item</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="8688594970099265" type="Dados">
+                    <param id="0" name="Instance variable">itemGameBoy</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2213577120999665">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2088598862196408" type="personagemPrincipalFase">
+                    <param id="0" name="Object">Martelo_item</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8923421296381295" type="Martelo_item" />
+                <action id="0" name="Play" sid="7265219854571859" type="Audio">
+                    <param id="0" name="Audio file">item</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="452495103767584" type="Dados">
+                    <param id="0" name="Instance variable">itemMartelo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4056349764740384">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1288413443906773" type="personagemPrincipalFase">
+                    <param id="0" name="Object">osso</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="3887019657942991" type="osso" />
+                <action id="0" name="Play" sid="1240496557592506" type="Audio">
+                    <param id="0" name="Audio file">item</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="9556477299467862" type="Dados">
+                    <param id="0" name="Instance variable">itemOsso</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3129375276025492">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5013636573641694" type="personagemPrincipalFase">
+                    <param id="0" name="Object">Pinico_Item</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="6228517918171107" type="Pinico_Item" />
+                <action id="0" name="Play" sid="1259664959183437" type="Audio">
+                    <param id="0" name="Audio file">item</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="2558777800229065" type="Dados">
+                    <param id="0" name="Instance variable">itemChicara</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3514139592949339">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8717802057842988" type="personagemPrincipalFase">
+                    <param id="0" name="Object">Frigideira_item</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="6431775900367144" type="Frigideira_item" />
+                <action id="0" name="Play" sid="7993029125187799" type="Audio">
+                    <param id="0" name="Audio file">item</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-15</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="7021508663909238" type="Dados">
+                    <param id="0" name="Instance variable">itemFrigideira</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>

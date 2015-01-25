@@ -1,0 +1,1416 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet Game Pocket</name>
+    <events>
+        <variable constant="0" name="fimJogo" sid="4633269812333017" static="0" type="number">0</variable>
+        <variable constant="0" name="Osso" sid="2908653879840527" static="0" type="number">0</variable>
+        <variable constant="0" name="Martelo" sid="2718126272491074" static="0" type="number">0</variable>
+        <variable constant="0" name="Gameboy" sid="1258270314346217" static="0" type="number">1</variable>
+        <variable constant="0" name="Frigideira" sid="2354972855647374" static="0" type="number">0</variable>
+        <variable constant="0" name="Pinico" sid="1336595651288978" static="0" type="number">0</variable>
+        <variable constant="0" name="Cigarro" sid="2476176085450435" static="0" type="number">0</variable>
+        <variable constant="0" name="Bola" sid="6829301365031413" static="0" type="number">1</variable>
+        <variable constant="0" name="Banana" sid="9338206122216413" static="0" type="number">0</variable>
+        <variable constant="0" name="Dia" sid="1524241689768995" static="0" type="number">2</variable>
+        <variable constant="0" name="Selec_Quadrad" sid="267349873417524" static="0" type="number">1</variable>
+        <event-block sid="462256597537443">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="8570524955696805" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="8864948200650949">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="4699503032717099" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">SLOT1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="5447329132490509" type="Dados">
+                            <param id="0" name="Instance variable">itemFrigideira</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="1298793926572886" type="System">
+                            <param id="0" name="Variable">Selec_Quadrad</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="3003835935049446" type="System">
+                            <param id="0" name="Object to create">Frigideira_item</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">243</param>
+                            <param id="3" name="Y">414</param>
+                        </action>
+                        <action id="0" name="Set text" sid="1515718264742509" type="var_text_2">
+                            <param id="0" name="Text">SLOT1.Text</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="5024576736836402">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8014019521681399" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="2272794869819785" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="8803711534260169" type="Dados">
+                    <param id="0" name="Instance variable">itemCigarro</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="4706583609440233" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-3" name="Create object" sid="8064727676864183" type="System">
+                    <param id="0" name="Object to create">cigarro</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">243</param>
+                    <param id="3" name="Y">414</param>
+                </action>
+                <action id="0" name="Set text" sid="6079025919283831" type="var_text_2">
+                    <param id="0" name="Text">SLOT2.Text</param>
+                </action>
+                <action id="-9" name="Set value" sid="1360315911125174" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1729196671466848">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="1338829930965735" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT3</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="4245152737673606" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="9797285175859966" type="Dados">
+                    <param id="0" name="Instance variable">itemBanana</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="7574714254103306" type="System">
+                    <param id="0" name="Object to create">Banana_Item</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">243</param>
+                    <param id="3" name="Y">414</param>
+                </action>
+                <action id="-9" name="Set value" sid="260878862948435" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="2223548887562423" type="var_text_2">
+                    <param id="0" name="Text">SLOT3.Text</param>
+                </action>
+                <action id="-9" name="Set value" sid="8710672357187897" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4149224135202452">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="3737556824691134" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT4</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1945610836534008" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="4208670475110543" type="Dados">
+                    <param id="0" name="Instance variable">itemGameBoy</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="3441445440094915" type="System">
+                    <param id="0" name="Object to create">game_item</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">243</param>
+                    <param id="3" name="Y">414</param>
+                </action>
+                <action id="-9" name="Set value" sid="1690695460460738" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="5080050223118589" type="var_text_2">
+                    <param id="0" name="Text">SLOT4.Text</param>
+                </action>
+                <action id="-9" name="Set value" sid="7722978526580302" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4591164045142876">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="7308293494746492" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7328341728745073" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="5312824233664375" type="Dados">
+                    <param id="0" name="Instance variable">itemMartelo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="4504819941837785" type="System">
+                    <param id="0" name="Object to create">Martelo_item</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">243</param>
+                    <param id="3" name="Y">414</param>
+                </action>
+                <action id="-9" name="Set value" sid="5415120531219602" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="1650170052326497" type="var_text_2">
+                    <param id="0" name="Text">SLOT5.Text</param>
+                </action>
+                <action id="-9" name="Set value" sid="4433938294023089" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6938637993421404">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8928825484999602" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT66</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6670461614795724" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="4972107483537803" type="Dados">
+                    <param id="0" name="Instance variable">itemChicara</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="4640732090454562" type="System">
+                    <param id="0" name="Object to create">Pinico_Item</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">243</param>
+                    <param id="3" name="Y">414</param>
+                </action>
+                <action id="-9" name="Set value" sid="1614028207023725" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="6900928762496723" type="var_text_2">
+                    <param id="0" name="Text">SLOT66.Text</param>
+                </action>
+                <action id="-9" name="Set value" sid="8420880370005529" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6862950217867754">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8273504731373452" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT77</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3903960926315033" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="7464662172699584" type="Dados">
+                    <param id="0" name="Instance variable">itemOsso</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="8591778163564927" type="System">
+                    <param id="0" name="Object to create">osso</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">243</param>
+                    <param id="3" name="Y">414</param>
+                </action>
+                <action id="-9" name="Set value" sid="3140479676032648" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="6721014580031278" type="var_text_2">
+                    <param id="0" name="Text">SLOT77.Text</param>
+                </action>
+                <action id="-9" name="Set value" sid="7282415173806495" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9599178938386584">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="5504730460846268" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT8</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6583532231063598" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="235319626545806" type="Dados">
+                    <param id="0" name="Instance variable">itemBolaDeBoliche</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="1916513285804074" type="System">
+                    <param id="0" name="Object to create">ball_item</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">243</param>
+                    <param id="3" name="Y">414</param>
+                </action>
+                <action id="-9" name="Set value" sid="2815085520547453" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="0" name="Set text" sid="5172089675517376" type="var_text_2">
+                    <param id="0" name="Text">SLOT8.Text</param>
+                </action>
+                <action id="-9" name="Set value" sid="2025290993796822" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4159819555447516">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="4042961032187155" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT9</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="771390031800662" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="3189543773336651">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="1459188062236632" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT10</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="9688926642585085" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="4171414511973715">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="6852256850726505" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6743130988696592">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="1917882006444385" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">SLOT1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="9492707915789476" type="Dados">
+                            <param id="0" name="Instance variable">itemFrigideira</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="9070090707757972" type="System">
+                            <param id="0" name="Object to create">Frigideira_item</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">243</param>
+                            <param id="3" name="Y">319</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3616430126954349" type="System">
+                            <param id="0" name="Variable">Selec_Quadrad</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                        <action id="0" name="Set text" sid="9377705216446093" type="1_var_texto">
+                            <param id="0" name="Text">SLOT1.Text</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2661125080283396">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="5884494063761735" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT2</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="708634817554947" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="5403394300754976" type="Dados">
+                    <param id="0" name="Instance variable">itemCigarro</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="4763976464995774" type="System">
+                    <param id="0" name="Object to create">cigarro</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">243</param>
+                    <param id="3" name="Y">319</param>
+                </action>
+                <action id="-9" name="Set value" sid="716343461194529" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Set text" sid="9230109200306069" type="1_var_texto">
+                    <param id="0" name="Text">SLOT2.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8070038463853483">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="5839987255780018" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT3</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1787490680432229" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="2555875583798596" type="Dados">
+                    <param id="0" name="Instance variable">itemBanana</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="7803898504676741" type="System">
+                    <param id="0" name="Object to create">Banana_Item</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">243</param>
+                    <param id="3" name="Y">319</param>
+                </action>
+                <action id="-9" name="Set value" sid="8161898088566816" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Set text" sid="3111869898865852" type="1_var_texto">
+                    <param id="0" name="Text">SLOT3.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3321608038372757">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="4614557694331415" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT4</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6897062054512358" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="2030879836305597" type="Dados">
+                    <param id="0" name="Instance variable">itemGameBoy</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="8235629123391982" type="System">
+                    <param id="0" name="Object to create">game_item</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">243</param>
+                    <param id="3" name="Y">319</param>
+                </action>
+                <action id="-9" name="Set value" sid="5944682388990317" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Set text" sid="1440686432425398" type="1_var_texto">
+                    <param id="0" name="Text">SLOT4.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1957146968946647">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="3906604901580608" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT5</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="343573177859817" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="854880252254959" type="Dados">
+                    <param id="0" name="Instance variable">itemMartelo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="4517394233507853" type="System">
+                    <param id="0" name="Object to create">Martelo_item</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">243</param>
+                    <param id="3" name="Y">319</param>
+                </action>
+                <action id="-9" name="Set value" sid="8983143038260011" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Set text" sid="6675233625759999" type="1_var_texto">
+                    <param id="0" name="Text">SLOT5.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7696875174105913">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="7008541928079808" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT66</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="8020812087138416" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="7865028322454456" type="Dados">
+                    <param id="0" name="Instance variable">itemChicara</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="7862660309613626" type="System">
+                    <param id="0" name="Object to create">Pinico_Item</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">243</param>
+                    <param id="3" name="Y">319</param>
+                </action>
+                <action id="-9" name="Set value" sid="1011073926410138" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Set text" sid="8554863839744662" type="1_var_texto">
+                    <param id="0" name="Text">SLOT66.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5297934714768924">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="9885860063942262" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT77</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="918836664788874" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="6516332891555363" type="Dados">
+                    <param id="0" name="Instance variable">itemOsso</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="7735827127109002" type="System">
+                    <param id="0" name="Object to create">osso</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">243</param>
+                    <param id="3" name="Y">319</param>
+                </action>
+                <action id="-9" name="Set value" sid="9171740714347822" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Set text" sid="6152749495908789" type="1_var_texto">
+                    <param id="0" name="Text">SLOT77.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3403509046467271">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="6701978272839956" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT8</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1631516910905504" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="2347073147358108" type="Dados">
+                    <param id="0" name="Instance variable">itemBolaDeBoliche</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="2147895502212934" type="System">
+                    <param id="0" name="Object to create">ball_item</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">243</param>
+                    <param id="3" name="Y">319</param>
+                </action>
+                <action id="-9" name="Set value" sid="8577717732088786" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">2</param>
+                </action>
+                <action id="0" name="Set text" sid="280042831105231" type="1_var_texto">
+                    <param id="0" name="Text">SLOT8.Text</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="760034578342385">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="8593484563116838" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT9</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="1931853002963922" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="5986147714289479">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="4874706579352326" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">SLOT10</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7796845534559023" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="2938378160652836">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="5844909853245977" type="Mouse">
+                    <param id="0" name="Object">SLOT1</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="8327468290093753" type="Dados">
+                    <param id="0" name="Instance variable">itemFrigideira</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="1595711477146776" type="SLOT1">
+                    <param id="0" name="Color">rgb(0, 255, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7243846152786699">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="4277450189452675" type="Dados">
+                    <param id="0" name="Instance variable">itemFrigideira</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="8405881230289523" type="Mouse">
+                    <param id="0" name="Object">SLOT1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="3187634465758672" type="SLOT1">
+                    <param id="0" name="Color">rgb(255, 255, 255)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6309989353331231">
+            <conditions />
+            <actions />
+        </event-block>
+        <event-block sid="8947121106745579">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="7804763507073113" type="Mouse">
+                    <param id="0" name="Object">SLOT2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="1328454727825393" type="Dados">
+                    <param id="0" name="Instance variable">itemCigarro</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="2449362557497179" type="SLOT2">
+                    <param id="0" name="Color">rgb(0, 255, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7501845353170984">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="1087685184000482" type="Mouse">
+                    <param id="0" name="Object">SLOT2</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="715236890193246" type="Dados">
+                    <param id="0" name="Instance variable">itemCigarro</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="6408599792253688" type="SLOT2">
+                    <param id="0" name="Color">rgb(255, 255, 255)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="356808864712361">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="9385994630615911" type="Mouse">
+                    <param id="0" name="Object">SLOT3</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="9227057396910127" type="Dados">
+                    <param id="0" name="Instance variable">itemBanana</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="4641830669266713" type="SLOT3">
+                    <param id="0" name="Color">rgb(0, 255, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="877110034822394">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="4869056393370483" type="Mouse">
+                    <param id="0" name="Object">SLOT3</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="9782608581332383" type="Dados">
+                    <param id="0" name="Instance variable">itemBanana</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="8111635876770754" type="SLOT3">
+                    <param id="0" name="Color">rgb(255, 255, 255)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3907431845972056">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="2154386211090356" type="Mouse">
+                    <param id="0" name="Object">SLOT4</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="888796225370031" type="Dados">
+                    <param id="0" name="Instance variable">itemGameBoy</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="4461310158719047" type="SLOT4">
+                    <param id="0" name="Color">rgb(0, 255, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3341465968444578">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="3186053765532818" type="Mouse">
+                    <param id="0" name="Object">SLOT4</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="5071862718329614" type="Dados">
+                    <param id="0" name="Instance variable">itemGameBoy</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="1190564276750879" type="SLOT4">
+                    <param id="0" name="Color">rgb(255, 255, 255)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8956062401429543">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="4667227575629348" type="Mouse">
+                    <param id="0" name="Object">SLOT5</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="5107326585331705" type="Dados">
+                    <param id="0" name="Instance variable">itemMartelo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="7854677928412748" type="SLOT5">
+                    <param id="0" name="Color">rgb(0, 255, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8476830477030241">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="1152248525038397" type="Mouse">
+                    <param id="0" name="Object">SLOT5</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="4112984890284633" type="Dados">
+                    <param id="0" name="Instance variable">itemMartelo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="7784966410915369" type="SLOT5">
+                    <param id="0" name="Color">rgb(255, 255, 255)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3069561236599907">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="1626656767322983" type="Mouse">
+                    <param id="0" name="Object">SLOT66</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="2341304632763784" type="Dados">
+                    <param id="0" name="Instance variable">itemChicara</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="5663003041823139" type="SLOT66">
+                    <param id="0" name="Color">rgb(0, 255, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8765186224529522">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="8386723839509015" type="Mouse">
+                    <param id="0" name="Object">SLOT66</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="7655104108056127" type="Dados">
+                    <param id="0" name="Instance variable">itemChicara</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="6421314528330555" type="SLOT66">
+                    <param id="0" name="Color">rgb(255, 255, 255)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3954117954540438">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="8186139400708188" type="Mouse">
+                    <param id="0" name="Object">SLOT77</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="3493490545004896" type="Dados">
+                    <param id="0" name="Instance variable">itemOsso</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="3370816297042155" type="SLOT77">
+                    <param id="0" name="Color">rgb(0, 255, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8374821116571086">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="6378970716909215" type="Mouse">
+                    <param id="0" name="Object">SLOT77</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="2630259961306433" type="Dados">
+                    <param id="0" name="Instance variable">itemOsso</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="3705060451476112" type="SLOT77">
+                    <param id="0" name="Color">rgb(255, 255, 255)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7328872532601738">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="2325116110973036" type="Mouse">
+                    <param id="0" name="Object">SLOT8</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="9473606534924541" type="Dados">
+                    <param id="0" name="Instance variable">itemBolaDeBoliche</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="7448306158180498" type="SLOT8">
+                    <param id="0" name="Color">rgb(255, 255, 255)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4262445636375177">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="9378353542905145" type="Mouse">
+                    <param id="0" name="Object">SLOT8</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="2634072171686359" type="Dados">
+                    <param id="0" name="Instance variable">itemBolaDeBoliche</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set font color" sid="7799268246344775" type="SLOT8">
+                    <param id="0" name="Color">rgb(0, 255, 0)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5667332298651214">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="4664112652900723" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">reSET_BTN</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="4602924474025457" type="Pinico_Item" />
+                <action id="-9" name="Set value" sid="3687171559159453" type="System">
+                    <param id="0" name="Variable">Selec_Quadrad</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9867107890402118" type="osso" />
+                <action id="-9" name="Destroy" sid="3927016951954543" type="Martelo_item" />
+                <action id="-9" name="Destroy" sid="2925217722325409" type="game_item" />
+                <action id="-9" name="Destroy" sid="9592636220934325" type="Frigideira_item" />
+                <action id="-9" name="Destroy" sid="6349464247752595" type="Banana_Item" />
+                <action id="-9" name="Destroy" sid="7339004583605767" type="ball_item" />
+                <action id="-9" name="Destroy" sid="7278647474395834" type="cigarro" />
+            </actions>
+        </event-block>
+        <event-block sid="154172126300324">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="5128870396329127" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">cont_btn</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5016307813927284">
+                    <conditions>
+                        <condition id="-14" inverted="1" name="Compare variable" sid="7534229106721519" type="System">
+                            <param id="0" name="Variable">Selec_Quadrad</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="2" name="Set fade-in time" sid="976173508658434" type="Background_sup">
+                            <param id="0" name="Fade-in time">0.13</param>
+                        </action>
+                        <action behavior="Fade" id="3" name="Set wait time" sid="1271110157567066" type="Background_sup">
+                            <param id="0" name="Wait time">3</param>
+                        </action>
+                        <action behavior="Fade" id="4" name="Set fade-out time" sid="6375787911779034" type="Background_sup">
+                            <param id="0" name="Fade-out time">0.1</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="2977656009897821" type="Background_sup" />
+                        <action behavior="Fade" id="1" name="Start fade" sid="8653917853842789" type="Aviso" />
+                        <action id="-15" name="Set visible" sid="7484639786759346" type="Aviso">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8748159703706763">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="8848899846312982" type="System">
+                            <param id="0" name="Variable">Selec_Quadrad</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Fade" id="2" name="Set fade-in time" sid="5979726355050667" type="Background_sup">
+                            <param id="0" name="Fade-in time">0.13</param>
+                        </action>
+                        <action behavior="Fade" id="3" name="Set wait time" sid="8957733780339701" type="Background_sup">
+                            <param id="0" name="Wait time">3</param>
+                        </action>
+                        <action behavior="Fade" id="4" name="Set fade-out time" sid="5492060344770017" type="Background_sup">
+                            <param id="0" name="Fade-out time">0</param>
+                        </action>
+                        <action behavior="Fade" id="1" name="Start fade" sid="188783464231456" type="Background_sup" />
+                        <action id="-15" name="Set visible" sid="621256255334485" type="spriteCursorPisca">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="9674988556674283" type="Text_ENVIANDO">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="6276023101464254" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="932156368280699" type="Text_ENVIANDO" />
+                        <action id="-9" name="Destroy" sid="6970959219125121" type="spriteCursorPisca" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="6057363768380481">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="848965773497374" type="System">
+                                    <param id="0" name="Variable">Dia</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="3856332319532471" type="Gen_text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="6633209644504774" type="Gen_text">
+                                    <param id="0" name="Text">&quot;Diário de bordo. Data estrelar 3, 4 do 3 do 2 do 1. A religião que existia nesse planeta era realmente primitiva. Esses seres cultuavam &quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="6469491696929144" type="depara">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="1" name="Append text" sid="3857995466836189" type="1_var_texto">
+                                    <param id="0" name="Text">&quot;S&quot;</param>
+                                </action>
+                                <action id="1" name="Append text" sid="8268319060653763" type="var_text_2">
+                                    <param id="0" name="Text">&quot;S&quot;</param>
+                                </action>
+                                <action id="1" name="Append text" sid="6275731966434646" type="Gen_text">
+                                    <param id="0" name="Text">1_var_texto.Text</param>
+                                </action>
+                                <action id="1" name="Append text" sid="7563419305870076" type="Gen_text">
+                                    <param id="0" name="Text">&quot; como divindade e queimavam &quot;</param>
+                                </action>
+                                <action id="1" name="Append text" sid="8553206797078833" type="Gen_text">
+                                    <param id="0" name="Text">var_text_2.Text</param>
+                                </action>
+                                <action id="1" name="Append text" sid="1304083652149337" type="Gen_text">
+                                    <param id="0" name="Text">&quot; como sacrifício.&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="6643872489199371" type="System">
+                                    <param id="0" name="Variable">fimJogo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="3462685739620941">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="2747971287779732" type="System">
+                                    <param id="0" name="Variable">Dia</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="52649256563243" type="Gen_text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="8715293805890501" type="Gen_text">
+                                    <param id="0" name="Text">&quot;Através de estudos avançados, percebi que os seres desse planeta eram realmente primitivos quanto seus hábitos de higiene. Como pode uma civilização se desenvolver limpando os dentes com &quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="4856179536972935" type="depara">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="1" name="Append text" sid="4065323453576911" type="1_var_texto">
+                                    <param id="0" name="Text">&quot;S&quot;</param>
+                                </action>
+                                <action id="1" name="Append text" sid="564200840653147" type="var_text_2">
+                                    <param id="0" name="Text">&quot;S&quot;</param>
+                                </action>
+                                <action id="1" name="Append text" sid="9616245820260332" type="Gen_text">
+                                    <param id="0" name="Text">1_var_texto.Text</param>
+                                </action>
+                                <action id="1" name="Append text" sid="1768624965680146" type="Gen_text">
+                                    <param id="0" name="Text">&quot; e esfregando &quot;</param>
+                                </action>
+                                <action id="1" name="Append text" sid="2158253246599758" type="Gen_text">
+                                    <param id="0" name="Text">var_text_2.Text</param>
+                                </action>
+                                <action id="1" name="Append text" sid="8530369041093529" type="Gen_text">
+                                    <param id="0" name="Text">&quot; pelo corpo? &quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="4596713835099558" type="System">
+                                    <param id="0" name="Variable">fimJogo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="8898881664909081">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="8174601317560899" type="System">
+                                    <param id="0" name="Variable">Dia</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">3</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="5891432502191446" type="Gen_text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="8600198503723118" type="Gen_text">
+                                    <param id="0" name="Text">&quot;Querido diário.... Hoje eu aprendi como os seres que viviam aqui faziam amigos. Eles se presenteavam com &quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="1146149732206358" type="depara">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="1" name="Append text" sid="8876330111200258" type="1_var_texto">
+                                    <param id="0" name="Text">&quot;S&quot;</param>
+                                </action>
+                                <action id="1" name="Append text" sid="6214434285366697" type="var_text_2">
+                                    <param id="0" name="Text">&quot;S&quot;</param>
+                                </action>
+                                <action id="1" name="Append text" sid="9848632851386887" type="Gen_text">
+                                    <param id="0" name="Text">1_var_texto.Text</param>
+                                </action>
+                                <action id="1" name="Append text" sid="6253941041829651" type="Gen_text">
+                                    <param id="0" name="Text">&quot; e quando as fêmeas cortejavam os machos elas ornamentavam seu rosto com  &quot;</param>
+                                </action>
+                                <action id="1" name="Append text" sid="5950777985028223" type="Gen_text">
+                                    <param id="0" name="Text">var_text_2.Text</param>
+                                </action>
+                                <action id="1" name="Append text" sid="260549314010536" type="Gen_text">
+                                    <param id="0" name="Text">&quot; Parece que eles precisavam de dois espécimes para se reproduzir.&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="166761568675996" type="System">
+                                    <param id="0" name="Variable">fimJogo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="994841227945684">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="8250442268798861" type="System">
+                                    <param id="0" name="Variable">Dia</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">4</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="8048957470060835" type="Gen_text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="1974577945243409" type="Gen_text">
+                                    <param id="0" name="Text">&quot;Esse é o Vlog do Mr. Freezer. Os seres desse planeta pareciam se divertir com coisas peculiares como arremessar  &quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="4395392200453778" type="depara">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="1" name="Append text" sid="6032943197775874" type="1_var_texto">
+                                    <param id="0" name="Text">&quot;S&quot;</param>
+                                </action>
+                                <action id="1" name="Append text" sid="3858194705606315" type="var_text_2">
+                                    <param id="0" name="Text">&quot;S&quot;</param>
+                                </action>
+                                <action id="1" name="Append text" sid="5888737478786969" type="Gen_text">
+                                    <param id="0" name="Text">1_var_texto.Text</param>
+                                </action>
+                                <action id="1" name="Append text" sid="1278803382476052" type="Gen_text">
+                                    <param id="0" name="Text">&quot; uns nos outros. Alguns preferiam se reunir e conversar sobre  &quot;</param>
+                                </action>
+                                <action id="1" name="Append text" sid="2428388155143782" type="Gen_text">
+                                    <param id="0" name="Text">var_text_2.Text</param>
+                                </action>
+                                <action id="1" name="Append text" sid="3626455400599122" type="Gen_text">
+                                    <param id="0" name="Text">&quot; Os mais problemáticos se trancavam em suas tocas e jogavam em aparelhos eletrônicos.&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="1807917522274429" type="System">
+                                    <param id="0" name="Variable">fimJogo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="5080183334163046">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="3109224984473353" type="System">
+                                    <param id="0" name="Variable">Dia</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-15" name="Set visible" sid="8961635322726619" type="Gen_text">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="6295403794845143" type="Gen_text">
+                                    <param id="0" name="Text">&quot;Os seres desse planeta eram certamente diferentes. É assustador calcular que a sua alimentação era baseada em &quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="2533612193930948" type="depara">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="1" name="Append text" sid="2172519758819185" type="1_var_texto">
+                                    <param id="0" name="Text">&quot;S&quot;</param>
+                                </action>
+                                <action id="1" name="Append text" sid="4088256850261624" type="var_text_2">
+                                    <param id="0" name="Text">&quot;S&quot;</param>
+                                </action>
+                                <action id="1" name="Append text" sid="3614176735020997" type="Gen_text">
+                                    <param id="0" name="Text">1_var_texto.Text</param>
+                                </action>
+                                <action id="1" name="Append text" sid="3452060478791899" type="Gen_text">
+                                    <param id="0" name="Text">&quot;. Só não entendi o porque eles não usavam &quot;</param>
+                                </action>
+                                <action id="1" name="Append text" sid="7747543758833722" type="Gen_text">
+                                    <param id="0" name="Text">var_text_2.Text</param>
+                                </action>
+                                <action id="1" name="Append text" sid="1124792898290199" type="Gen_text">
+                                    <param id="0" name="Text">&quot; como tempero, tem um gostinho tão peculiar.&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="2412385424753032" type="System">
+                                    <param id="0" name="Variable">fimJogo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="6439088258656925">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2397709985310686" type="Dados">
+                    <param id="0" name="Instance variable">itemFrigideira</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3296331458817521" type="SLOT1">
+                    <param id="0" name="Text">&quot;FRIGIDEIRA&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9381350683470108">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2241586174569621" type="Dados">
+                    <param id="0" name="Instance variable">itemCigarro</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="8874140106654048" type="SLOT2" />
+            </actions>
+        </event-block>
+        <event-block sid="6374313973538605">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="8731244332059307" type="Dados">
+                    <param id="0" name="Instance variable">itemGameBoy</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="9055508695744611" type="SLOT4">
+                    <param id="0" name="Text">&quot;GAME BOY&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6089071126885057">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2361110197123802" type="Dados">
+                    <param id="0" name="Instance variable">itemMartelo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="9334134638572996" type="SLOT5">
+                    <param id="0" name="Text">&quot;MARTELO&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3063767664885191">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="1519059450794591" type="Dados">
+                    <param id="0" name="Instance variable">itemChicara</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="972504928470553" type="SLOT66">
+                    <param id="0" name="Text">&quot;PINICO&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7945923988423495">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="6928828489888725" type="Dados">
+                    <param id="0" name="Instance variable">itemOsso</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3058556834760959" type="SLOT77">
+                    <param id="0" name="Text">&quot;OSSO&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3548976978347628">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="9124675890032636" type="Dados">
+                    <param id="0" name="Instance variable">itemBolaDeBoliche</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="1779435460979128" type="SLOT8">
+                    <param id="0" name="Text">&quot;BOLA&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2095587796628075">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="2033546136637225" type="Dados">
+                    <param id="0" name="Instance variable">itemBanana</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5330628139093752" type="SLOT3">
+                    <param id="0" name="Text">&quot;BANANA&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6585293515636317">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="2801327053317273" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="2402844461876098" type="System">
+                    <param id="0" name="Variable">Dia</param>
+                    <param id="1" name="Value">int(random(1,5))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4568294213448918">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="493070578036147" type="Keyboard">
+                    <param id="0" name="Key">32 (Space)</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="34424184488912" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9461565144191797">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="4733289961644672" type="System" />
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="9539768845406775" type="Dados">
+                    <param id="0" name="Instance variable">itemGameBoy</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="8909005681183242" type="Dados">
+                    <param id="0" name="Instance variable">itemFrigideira</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="8814228284199205" type="Dados">
+                    <param id="0" name="Instance variable">itemBanana</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="7889967971031682" type="Dados">
+                    <param id="0" name="Instance variable">itemOsso</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="9741853832639444" type="Dados">
+                    <param id="0" name="Instance variable">itemBolaDeBoliche</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="259090324687063" type="Dados">
+                    <param id="0" name="Instance variable">itemCigarro</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="1917114124331002" type="Dados">
+                    <param id="0" name="Instance variable">itemMartelo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="6515209745557278" type="Dados">
+                    <param id="0" name="Instance variable">itemChicara</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

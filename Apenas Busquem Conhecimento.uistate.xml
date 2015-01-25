@@ -10,11 +10,13 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout order="1">Fase Caverna</layout>
-        <layout order="2">Tutorial</layout>
-        <layout order="4">Mapa</layout>
-        <layout active="1" order="5">Fase Museu</layout>
-        <event-sheet order="0">Event sheet Fase Caverna</event-sheet>
+        <layout order="1">Game Pocket</layout>
+        <layout order="4">Fase Museu</layout>
+        <layout order="5">Menu</layout>
+        <layout order="7">Tutorial</layout>
+        <layout active="1" order="8">Fase Caverna</layout>
+        <event-sheet order="0">Event sheet Caverna</event-sheet>
+        <event-sheet order="2">Event sheet Game Pocket</event-sheet>
         <event-sheet order="3">Event sheet Museu</event-sheet>
         <event-sheet order="6">Event sheet Tutorial</event-sheet>
     </open-tabs>
@@ -94,7 +96,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Cano3/" />
         <folder expanded="1" path="animation-folder/paredePodre/" />
         <folder expanded="1" path="animation-folder/plataformaFlutuanteH/" />
-        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/fimFase/" />
         <folder expanded="1" path="animation-folder/pedra1/" />
         <folder expanded="1" path="animation-folder/pedra2/" />
         <folder expanded="1" path="animation-folder/pedra3/" />
@@ -103,5 +105,16 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/bateria/" />
         <folder expanded="1" path="animation-folder/Sprite8/" />
         <folder expanded="1" path="animation-folder/Sprite9/" />
+        <folder expanded="1" path="animation-folder/cigarro/" />
+        <folder expanded="1" path="animation-folder/ball_item/" />
+        <folder expanded="1" path="animation-folder/osso/" />
+        <folder expanded="1" path="animation-folder/Banana_Item/" />
+        <folder expanded="1" path="animation-folder/Frigideira_item/" />
+        <folder expanded="1" path="animation-folder/Pinico_Item/" />
+        <folder expanded="1" path="animation-folder/game_item/" />
+        <folder expanded="1" path="animation-folder/Martelo_item/" />
+        <folder expanded="1" path="animation-folder/reSET_BTN/" />
+        <folder expanded="1" path="animation-folder/cont_btn/" />
+        <folder expanded="1" path="animation-folder/spriteCursorPisca/" />
     </folders-expanded>
 </c2uistate>
